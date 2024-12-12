@@ -1,4 +1,4 @@
-check_usuario(){
+ACVcheck_usuario(){
     if grep -q "${USUARIO}" /etc/passwd
     then
         echo "${USUARIO} se encuentra en el sistema"  >> /root/logs/archivo.log
@@ -10,7 +10,8 @@ check_usuario(){
 }
 
 
-check_home(){
+
+ACVcheck_home(){
     if [ ! -d "/home/${USUARIO}" ]
     then
         echo "el directorio de ${USUARIO} No existe"  >> /root/logs/archivo.log
@@ -21,12 +22,11 @@ check_home(){
     fi
 }
 
-
-newUser(){
-    check_usuario
+ACVnewUser(){
+    ACVcheck_usuario
     if [ "$?" -eq 0 ]
     then
-        check_home  
+        ACVcheck_home  
         if [ "$?" -eq 0 ]
         then
             useradd -m -d /home/"${USUARIO}" -s /bin/bash "${USUARIO}"

@@ -1,0 +1,34 @@
+services:
+  servidor:
+    build:
+      context: ${CONTEXTO}
+      dockerfile: ./dockerfiles/js/react/ACVDockerfile
+      args: #argumentos del build de ubuntubase + el build del nginx
+       - CONTEXT=${CONTEXTO}
+       - TZ=${TZ}
+       - PROYECTO=${PROYECTO}
+       - AUTOR=${AUTOR}
+    image: ${AUTOR}/react
+    container_name: ACVreact1
+    hostname: ${HOSTNAME}
+    env_file:
+      - ./.env
+    environment:
+      - USUARIO=${USUARIO}
+      - PASSWORD=${PASSWD}
+    ports:
+      - "${PORT_ORIGEN}:3000"
+    volumes:
+      - ./html:/var/www/html
+      - ./logs:/root/logs
+    networks:
+      netcaronte:
+        ipv4_address: 172.120.10.6
+
+
+networks:
+  netcaronte:
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.120.10.0/24

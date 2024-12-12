@@ -1,4 +1,4 @@
-config_ssh(){
+ACVconfig_ssh(){
     sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
     sed -i 's/#Port 22/Port 22/' /etc/ssh/sshd_config
     if [ ! -d /home/${USUARIO}/.ssh ]; then
@@ -9,7 +9,7 @@ config_ssh(){
 }
 
 
-config_sudoers(){
+ACVconfig_sudoers(){
     if [ -f /etc/sudoers ]
     then
         echo "${USUARIO} ALL=(ALL:ALL) ALL" >> /etc/sudoers
@@ -17,7 +17,7 @@ config_sudoers(){
 }
 
 
-newSSH(){
-    config_ssh
-    config_sudoers
+ACVnewSSH(){
+    ACVconfig_ssh
+    ACVconfig_sudoers
 }
