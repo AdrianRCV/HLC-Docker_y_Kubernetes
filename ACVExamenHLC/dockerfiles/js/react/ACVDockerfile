@@ -1,6 +1,5 @@
 FROM adriancampos/nginx
 
-
 ENV USUARIO="AdrianCV"
 ENV PASSWORD="adriancv"
 ARG TZ

@@ -45,8 +45,27 @@ ACVbuild () {
     ACVstartreact
     if [ "$?" -eq 0 ]
     then 
-        npm build
+        npm run build
         return 0
+    fi
+}
+
+ACVcopy () {
+    ACVbuild
+    if [ "$?" -eq 0 ]
+    then
+        cp -r /home/ubuntu/app/Autocaravaneando/build/* /var/www/html
+        echo "Se ha copiado el build" >> /root/logs/archivo.log
+        return 0
+    fi
+}
+
+ACVpermisos() {
+    ACVcopy
+    if [ "$?" -eq 0 ]
+    then 
+        chown -R www-data:www-data /var/www/html
+        chmod -R 755 /var/www/html
     fi
 }
 
@@ -55,6 +74,9 @@ main(){
     ACVcheck_clone
     ACVinstallnpm
     ACVstartreact
+    ACVbuild
+    ACVcopy
+    ACVpermisos
     #ACVconfReact
     #nginx &
     tail -f /dev/null
