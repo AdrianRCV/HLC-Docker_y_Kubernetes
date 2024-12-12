@@ -2,21 +2,24 @@ services:
   servidor:
     build:
       context: ${CONTEXTO}
-      dockerfile: ./dockerfiles/ubuntu/ACVDockerfile
-      args:
+      dockerfile: ./dockerfiles/sweb/nginx/ACVDockerfile
+      args: #argumentos del build de ubuntubase + el build del nginx
        - CONTEXT=${CONTEXTO}
        - TZ=${TZ}
        - PROYECTO=${PROYECTO}
        - AUTOR=${AUTOR}
-    image: ${AUTOR}/ubuntubase
-    container_name: ${HOSTNAME}
+    image: ${AUTOR}/nginx
+    container_name: ACVminginx1
+    hostname: ${HOSTNAME}
     env_file:
       - ./.env
     environment:
       - USUARIO=${USUARIO}
       - PASSWORD=${PASSWD}
-      - HOSTNAME=${HOSTNAME}
+    ports:
+      - "${PORT_ORIGEN}:80"
     volumes:
+      - ./html:/var/www/html
       - ./logs:/root/logs
     networks:
       netcaronte:

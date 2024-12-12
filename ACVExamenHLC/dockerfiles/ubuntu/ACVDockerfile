@@ -25,15 +25,15 @@ RUN apt update && apt install -yq --no-install-recommends \
     python3
 
 
-#RUN mkdir /var/run/sshd
-#EXPOSE 22
+RUN mkdir /var/run/sshd
+EXPOSE 22
 
 RUN mkdir /root/logs
 RUN mkdir /root/datos
 RUN touch /root/logs/build.log
-   
-RUN echo "contexto: ${D_FILES}"
+COPY ./common/id_rsa.pub /root/datos
 
+RUN echo "contexto: ${D_FILES}"
 
 RUN mkdir /root/admin
 COPY ./dockerfiles/ubuntu/admin /root/admin
