@@ -19,7 +19,7 @@ services:
     ports:
       - "${PORT_ORIGEN}:80"
     volumes:
-      - ./html:/var/www/html
+      #- ./html:/var/www/html
       - ./logs:/root/logs
     networks:
       netcaronte:

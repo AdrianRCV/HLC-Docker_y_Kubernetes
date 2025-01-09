@@ -2,6 +2,7 @@ FROM adriancampos/nginx
 
 ENV USUARIO="AdrianCV"
 ENV PASSWORD="adriancv"
+ENV GITHUB=""
 ARG TZ
 ARG CONTEXT
 ARG PROYECTO
@@ -13,15 +14,17 @@ RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash -
 
 RUN apt-get install -y nodejs
 
-RUN node --version && npm --version
-
-EXPOSE 3000
-EXPOSE 80
-
+USER root
 RUN mkdir /root/admin/react
-COPY ./dockerfiles/js/react/admin/ACVstart.sh /root/admin/react
+COPY ./dockerfiles/js/react /root/admin/react
+RUN chmod +x /root/admin/react/admin/ACVstart.sh
 
-RUN chmod +x /root/admin/react/ACVstart.sh
-WORKDIR /root/admin
+WORKDIR /var/www/html
+# COPY ./proyectos/${PROYECTO}/app /var/www/html
 
-ENTRYPOINT ["/root/admin/react/ACVstart.sh"]
+# RUN npm install
+# RUN chown -R www-data /var/www/html
+EXPOSE 3000
+
+WORKDIR /root/admin/react
+ENTRYPOINT ["./admin/ACVstart.sh"]

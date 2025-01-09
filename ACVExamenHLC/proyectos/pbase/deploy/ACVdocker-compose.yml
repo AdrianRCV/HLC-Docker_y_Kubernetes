@@ -2,24 +2,21 @@ services:
   servidor:
     build:
       context: ${CONTEXTO}
-      dockerfile: ./dockerfiles/js/react/ACVDockerfile
+      dockerfile: ./dockerfiles/ubuntu/ACVDockerfile
       args: #argumentos del build de ubuntubase + el build del nginx
        - CONTEXT=${CONTEXTO}
        - TZ=${TZ}
        - PROYECTO=${PROYECTO}
        - AUTOR=${AUTOR}
-    image: ${AUTOR}/react
-    container_name: ACVreact1
+    image: ${AUTOR}/ubuntubase
+    container_name: miservidor
     hostname: ${HOSTNAME}
     env_file:
       - ./.env
     environment:
       - USUARIO=${USUARIO}
       - PASSWORD=${PASSWD}
-    ports:
-      - "${PORT_ORIGEN}:3000"
     volumes:
-      - ./html:/var/www/html
       - ./logs:/root/logs
     networks:
       netcaronte:

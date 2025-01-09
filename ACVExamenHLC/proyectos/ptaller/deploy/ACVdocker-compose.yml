@@ -9,13 +9,13 @@ services:
        - PROYECTO=${PROYECTO}
        - AUTOR=${AUTOR}
     image: ${AUTOR}/ubuntubase
-    container_name: ${HOSTNAME}
+    container_name: miservidor
+    hostname: ${HOSTNAME}
     env_file:
       - ./.env
     environment:
       - USUARIO=${USUARIO}
       - PASSWORD=${PASSWD}
-      - HOSTNAME=${HOSTNAME}
     volumes:
       - ./logs:/root/logs
     networks:

@@ -1,85 +1,66 @@
 #!/bin/bash
 set -e
 
-#source /root/admin/ConfigReact/ACVconfigreact.sh
+config_git(){
+   # descarga el proyecto via Git en /home/${USUARIO}/app
+   mkdir /home/${USUARIO}/app
+   cd /home/${USUARIO}/app
+   git clone ${GITHUB}
+   echo "Proyecto ${PROYECTO} clonado..." >> /root/logs/archivo.log
 
-#chmod +x /root/admin/ConfigReact/ACVconfigreact.sh
-
-ACVclone_git(){
-    mkdir /home/ubuntu/app
-    cd /home/ubuntu/app
-    git clone https://github.com/morgadodesarrollador/Autocaravaneando.git
-} 
-
-ACVcheck_clone(){
-    if [ ! -d "/home/ubuntu/app/Autocaravaneando" ]
-    then
-        echo "No se ha clonado correctamente Autocaravaneando" >> /root/logs/archivo.log
-        return 1
-    else 
-        echo "Se ha clonado correctamente Autocaravaneando" >> /root/logs/archivo.log
-        return 0
-    fi
+}
+config_react(){
+   cd /home/${USUARIO}/app/${PROYECTO}
+   echo "Dentro de ${PROYECTO}..." >> /root/logs/archivo.log
+   # Verifica si React con TypeScript ya está inicializado
+   if [ ! -d "node_modules" ]; then
+      # Ejecutar npm install
+      npm install 
+      if [ $? -ne 0 ]; then
+         echo "Error al instalar dependencias. Abortando." >> /root/logs/archivo.log
+         exit 1
+      fi
+      echo "dependencias instaladas..." >> /root/logs/archivo.log
+      # Ejecutar npm start
+      npm start &
+      if [ $? -ne 0 ]; then
+         echo "Error al iniciar la aplicación. Abortando."
+         exit 1
+      fi
+      echo "Iniciando la aplicación en 3000.." >> /root/logs/react.log
+   fi
+  
+   if [ ! -d "build" ]; then
+      echo "Construyendo la aplicación React para producción..." >> /root/logs/react.log
+      # Ejecutar npm run build
+      npm run build 
+      # copiamos
+      if [ $? -ne 0 ]; then
+            echo "Error al construir la aplicación.">> /root/logs/react.log
+            exit 1
+      fi
+      # Mover al html
+      cp -r ./build/* /var/www/html
+      chown -R www-data /var/www/html
+      chmod -R 755  /var/www/html
+      service nginx restart
+      echo "Build movido a /var/www/html... Sirviendo nginx" >> /root/logs/react.log
+      echo "Todo completado exitosamente.">> /root/logs/react.log
+   fi
 }
 
-ACVinstallnpm (){
-    ACVcheck_clone
-    cd /home/ubuntu/app/Autocaravaneando
-    if [ "$?" -eq 0 ]
-    then
-        npm install
-        return 0
-    fi
-}
-
-ACVstartreact (){
-    ACVinstallnpm
-    if [ "$?" -eq 0 ]
-    then 
-        npm start
-        return 0
-    fi
-}
-
-ACVbuild () {
-    ACVstartreact
-    if [ "$?" -eq 0 ]
-    then 
-        npm run build
-        return 0
-    fi
-}
-
-ACVcopy () {
-    ACVbuild
-    if [ "$?" -eq 0 ]
-    then
-        cp -r /home/ubuntu/app/Autocaravaneando/build/* /var/www/html
-        echo "Se ha copiado el build" >> /root/logs/archivo.log
-        return 0
-    fi
-}
-
-ACVpermisos() {
-    ACVcopy
-    if [ "$?" -eq 0 ]
-    then 
-        chown -R www-data:www-data /var/www/html
-        chmod -R 755 /var/www/html
-    fi
+load_entrypoint_nginx(){
+   #ejecutar entrypoint ngin. Invoca a EP de base, configura nginx y lanza nginx &
+   /root/admin/ACVstart.sh
 }
 
 main(){
-    ACVclone_git
-    ACVcheck_clone
-    ACVinstallnpm
-    ACVstartreact
-    ACVbuild
-    ACVcopy
-    ACVpermisos
-    #ACVconfReact
-    #nginx &
-    tail -f /dev/null
+   touch /root/logs/react.log
+   load_entrypoint_nginx 
+   config_git
+   config_react
+
+   tail -f /dev/null
 }
 
 main
