@@ -25,7 +25,7 @@ services:
       # - ./html:/var/www/html
     networks:
       netcaronte:
-        ipv4_address: 172.120.10.6
+        ipv4_address: 172.120.10.7
 
 networks:
   netcaronte:

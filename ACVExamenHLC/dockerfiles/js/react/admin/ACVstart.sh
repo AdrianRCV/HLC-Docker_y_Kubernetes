@@ -9,8 +9,9 @@ config_git(){
    echo "Proyecto ${PROYECTO} clonado..." >> /root/logs/archivo.log
 
 }
+
 config_react(){
-   cd /home/${USUARIO}/app/${PROYECTO}
+   cd /home/${USUARIO}/app/${PROYECTO}/ReactIAW
    echo "Dentro de ${PROYECTO}..." >> /root/logs/archivo.log
    # Verifica si React con TypeScript ya está inicializado
    if [ ! -d "node_modules" ]; then
@@ -40,7 +41,7 @@ config_react(){
             exit 1
       fi
       # Mover al html
-      cp -r ./build/* /var/www/html
+      cp -r /home/adrian/app/PokeAPI-HLC/ReactIAW/dist/* /var/www/html
       chown -R www-data /var/www/html
       chmod -R 755  /var/www/html
       service nginx restart
