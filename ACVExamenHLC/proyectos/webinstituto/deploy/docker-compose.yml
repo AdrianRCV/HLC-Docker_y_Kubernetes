@@ -1,0 +1,31 @@
+services:
+  servidor:
+    build:
+      context: ${CONTEXTO}
+      dockerfile: ./proyectos/webinstituto/deploy/Dockerfile
+      args:
+       - CONTEXT=${CONTEXTO}
+       - TZ=${TZ}
+       - PROYECTO=${PROYECTO}
+       - AUTOR=${AUTOR}
+    image: ${AUTOR}/webcvalera:1.0
+    container_name: webCValera
+    hostname: ${HOSTNAME}
+    env_file:
+      - ./.env
+    environment:
+      - USUARIO=${USUARIO}
+      - PASSWORD=${PASSWD}
+    volumes:
+      - ./logs:/root/logs
+    networks:
+      netcaronte:
+        ipv4_address: 172.120.10.7
+
+
+networks:
+  netcaronte:
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.120.10.0/24
