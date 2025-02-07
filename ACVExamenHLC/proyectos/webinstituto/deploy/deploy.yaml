@@ -1,0 +1,41 @@
+apiVersion: apps/v1              #Este archivo .yaml configura el deploy
+kind: Deployment
+metadata:
+  name: webcv-d
+  labels:
+    app: webcv
+spec: #especificaciones del deploy
+  replicas: 2
+  selector:
+    matchLabels:
+      app: webcv
+  template:  
+    metadata:
+      labels: 
+        app: webcv
+    spec: #especificaciones del pod
+      containers:
+        - name: webcv
+          image: adrianrcv/hlc:4.0
+          ports:
+            - containerPort: 80
+          envFrom:
+            - configMapRef:
+                name: app-env
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: webcv-s
+  labels:
+    app: webcv
+spec:
+  selector:
+    app: webcv
+  type: NodePort
+  ports:
+  - name: http-port
+    protocol: TCP
+    port: 80
+    targetPort: 80
+    nodePort: 30080 
