@@ -1,0 +1,27 @@
+apiVersion: v1
+kind: Pod
+metadata:
+ name: next1
+ labels:
+  app: next
+spec:
+  containers:
+  - name: next
+    image: adrianrcv/hlc:5.0
+    ports:
+    - containerPort: 80  
+    - containerPort: 3000
+    env:
+    - name: GITHUB
+      value: "https://github.com/AdrianRCV/PokeAPINext.git"
+    - name: USUARIO
+      value: "adrian"
+    - name: PASSWD
+      value: "adrian"
+    - name: HOSTNAME
+      value: "nextpokeapi"
+    - name: PORT_SSH
+      value: "45678"
+    - name: TZ
+      value: "Europe/Madrid"
+      

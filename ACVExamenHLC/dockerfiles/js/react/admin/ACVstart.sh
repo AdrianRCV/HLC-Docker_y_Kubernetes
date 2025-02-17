@@ -11,7 +11,7 @@ config_git(){
 }
 
 config_react(){
-   cd /home/${USUARIO}/app/PokeAPI-HLC/ReactIAW
+   cd /home/${USUARIO}/app/PokeAPINext/nextasir
    echo "Dentro de ${PROYECTO}..." >> /root/logs/archivo.log
    # Verifica si React con TypeScript ya está inicializado
    if [ ! -d "node_modules" ]; then

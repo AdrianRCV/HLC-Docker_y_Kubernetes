@@ -1,0 +1,36 @@
+apiVersion: apps/v1              #Este archivo .yaml configura el deploy
+kind: Deployment
+metadata:
+  name: react1-d
+  labels:
+    app: react1
+spec: #especificaciones del deploy
+  replicas: 2
+  selector:
+    matchLabels:
+      app: react1
+  template:  
+    metadata:
+      labels: 
+        app: react1
+    spec: #especificaciones del pod
+      containers:
+        - name: react1
+          image: adrianrcv/hlc:3.0
+          ports:
+            - containerPort: 80
+            - containerPort: 3000
+          env:
+          - name: GITHUB
+            value: "https://github.com/AdrianRCV/PokeAPI-HLC.git"
+          - name: USUARIO
+            value: "adrian"
+          - name: PASSWD
+            value: "adrian"
+          - name: HOSTNAME
+            value: "pokeapi"
+          - name: PORT_SSH
+            value: "45678"
+          - name: TZ
+            value: "Europe/Madrid"
+      
