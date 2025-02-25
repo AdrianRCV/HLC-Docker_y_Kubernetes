@@ -7,7 +7,7 @@ metadata:
 spec:
   containers:
   - name: next
-    image: adrianrcv/hlc:5.0
+    image: adrianrcv/hlc:6.0
     ports:
     - containerPort: 80  
     - containerPort: 3000

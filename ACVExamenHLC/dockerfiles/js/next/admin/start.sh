@@ -54,12 +54,12 @@ config_next(){
 
 load_entrypoint_nginx(){
    # Ejecutar entrypoint de Nginx (si es necesario)
-   /root/admin/start.sh
+   /root/admin/ACVstart.sh
 }
 
 main(){
    touch /root/logs/next.log
-   #load_entrypoint_nginx
+   load_entrypoint_nginx
    config_git
    config_next
 

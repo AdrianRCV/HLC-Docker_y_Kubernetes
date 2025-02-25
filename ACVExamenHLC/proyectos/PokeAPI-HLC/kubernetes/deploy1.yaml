@@ -16,13 +16,13 @@ spec: #especificaciones del deploy
     spec: #especificaciones del pod
       containers:
         - name: react1
-          image: adrianrcv/hlc:3.0
+          image: adrianrcv/hlc:7.0
           ports:
             - containerPort: 80
             - containerPort: 3000
           env:
           - name: GITHUB
-            value: "https://github.com/AdrianRCV/PokeAPI-HLC.git"
+            value: "https://github.com/AdrianRCV/PokeAPI-React.git"
           - name: USUARIO
             value: "adrian"
           - name: PASSWD

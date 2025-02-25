@@ -11,7 +11,7 @@ config_git(){
 }
 
 config_react(){
-   cd /home/${USUARIO}/app/PokeAPINext/nextasir
+   cd /home/${USUARIO}/app/PokeAPI-React/ReactIAW/src/paginaWeb
    echo "Dentro de ${PROYECTO}..." >> /root/logs/archivo.log
    # Verifica si React con TypeScript ya está inicializado
    if [ ! -d "node_modules" ]; then
@@ -41,7 +41,7 @@ config_react(){
             exit 1
       fi
       # Mover al html
-      cp -r /home/adrian/app/PokeAPI-HLC/ReactIAW/dist/* /var/www/html
+      cp -r /home/adrian/app/PokeAPI-React/ReactIAW/dist/* /var/www/html
       chown -R www-data /var/www/html
       chmod -R 755  /var/www/html
       service nginx restart
