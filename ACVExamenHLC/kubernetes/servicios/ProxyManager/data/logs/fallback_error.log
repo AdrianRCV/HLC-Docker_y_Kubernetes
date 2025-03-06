@@ -1,0 +1,4 @@
+2025/03/06 12:42:06 [error] 1820#1820: *33 open() "/var/www/html/cgi-bin/luci/;stok=/locale" failed (2: No such file or directory), client: 194.120.230.215, server: localhost-nginx-proxy-manager, request: "GET /cgi-bin/luci/;stok=/locale HTTP/1.1", host: "207.180.195.219:80"
+2025/03/06 12:46:29 [warn] 1799#1799: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:4
+2025/03/06 12:48:46 [error] 1847#1847: *126 open() "/var/www/html/ReportServer" failed (2: No such file or directory), client: 20.65.193.248, server: localhost-nginx-proxy-manager, request: "GET /ReportServer HTTP/1.1", host: "207.180.195.219"
+2025/03/06 12:48:48 [error] 1847#1847: *130 open() "/var/www/html/sftp-config.json" failed (2: No such file or directory), client: 47.102.40.166, server: localhost-nginx-proxy-manager, request: "GET /sftp-config.json HTTP/1.1", host: "207.180.195.219"
