@@ -1,4 +1,206 @@
-2025/03/06 12:42:06 [error] 1820#1820: *33 open() "/var/www/html/cgi-bin/luci/;stok=/locale" failed (2: No such file or directory), client: 194.120.230.215, server: localhost-nginx-proxy-manager, request: "GET /cgi-bin/luci/;stok=/locale HTTP/1.1", host: "207.180.195.219:80"
-2025/03/06 12:46:29 [warn] 1799#1799: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:4
-2025/03/06 12:48:46 [error] 1847#1847: *126 open() "/var/www/html/ReportServer" failed (2: No such file or directory), client: 20.65.193.248, server: localhost-nginx-proxy-manager, request: "GET /ReportServer HTTP/1.1", host: "207.180.195.219"
-2025/03/06 12:48:48 [error] 1847#1847: *130 open() "/var/www/html/sftp-config.json" failed (2: No such file or directory), client: 47.102.40.166, server: localhost-nginx-proxy-manager, request: "GET /sftp-config.json HTTP/1.1", host: "207.180.195.219"
+2025/03/09 14:10:39 [warn] 154#154: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:4
+2025/03/09 20:10:39 [warn] 154#154: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:4
+2025/03/10 02:10:39 [warn] 154#154: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:4
+2025/03/10 08:10:39 [warn] 154#154: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:4
+2025/03/10 09:36:57 [error] 176#176: *4 open() "/var/www/html/.env.backup" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.backup HTTP/1.1", host: "207.180.195.219"
+2025/03/10 09:36:57 [error] 174#174: *5 open() "/var/www/html/config.json" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /config.json HTTP/1.1", host: "207.180.195.219"
+2025/03/10 09:36:57 [error] 174#174: *6 open() "/var/www/html/settings/.env" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /settings/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/10 09:36:57 [error] 174#174: *7 open() "/var/www/html/files/.git/config" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /files/.git/config HTTP/1.1", host: "207.180.195.219"
+2025/03/10 09:36:57 [error] 174#174: *8 open() "/var/www/html/.env.prod" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.prod HTTP/1.1", host: "207.180.195.219"
+2025/03/10 09:36:57 [error] 174#174: *9 open() "/var/www/html/config/.env" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /config/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/10 09:36:57 [error] 174#174: *10 open() "/var/www/html/data/.git/config" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /data/.git/config HTTP/1.1", host: "207.180.195.219"
+2025/03/10 09:36:57 [error] 174#174: *11 open() "/var/www/html/project/.git/config" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /project/.git/config HTTP/1.1", host: "207.180.195.219"
+2025/03/10 09:36:57 [error] 174#174: *12 open() "/var/www/html/www/.git/config" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /www/.git/config HTTP/1.1", host: "207.180.195.219"
+2025/03/10 09:36:57 [error] 174#174: *13 open() "/var/www/html/.aws/credentials" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.aws/credentials HTTP/1.1", host: "207.180.195.219"
+2025/03/10 09:36:57 [error] 174#174: *14 open() "/var/www/html/.env.dev.local" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.dev.local HTTP/1.1", host: "207.180.195.219"
+2025/03/10 09:36:57 [error] 174#174: *15 open() "/var/www/html/.env.testing" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.testing HTTP/1.1", host: "207.180.195.219"
+2025/03/10 09:36:57 [error] 174#174: *16 open() "/var/www/html/.env.uat" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.uat HTTP/1.1", host: "207.180.195.219"
+2025/03/10 09:36:57 [error] 174#174: *17 open() "/var/www/html/static../.git/config" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /static../.git/config HTTP/1.1", host: "207.180.195.219"
+2025/03/10 09:36:57 [error] 174#174: *18 open() "/var/www/html/.env.config" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.config HTTP/1.1", host: "207.180.195.219"
+2025/03/10 09:36:57 [error] 174#174: *19 open() "/var/www/html/.env.dist" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.dist HTTP/1.1", host: "207.180.195.219"
+2025/03/10 09:36:57 [error] 174#174: *20 open() "/var/www/html/admin/.git/config" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /admin/.git/config HTTP/1.1", host: "207.180.195.219"
+2025/03/10 09:36:57 [error] 175#175: *21 open() "/var/www/html/.env.local" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.local HTTP/1.1", host: "207.180.195.219"
+2025/03/10 09:36:57 [error] 175#175: *22 open() "/var/www/html/.env_sample" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env_sample HTTP/1.1", host: "207.180.195.219"
+2025/03/10 09:36:57 [error] 175#175: *23 open() "/var/www/html/build/.env" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /build/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/10 09:36:57 [error] 175#175: *24 open() "/var/www/html/.env.test" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.test HTTP/1.1", host: "207.180.195.219"
+2025/03/10 09:36:57 [error] 175#175: *25 open() "/var/www/html/app/.git/config" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /app/.git/config HTTP/1.1", host: "207.180.195.219"
+2025/03/10 09:36:57 [error] 175#175: *26 open() "/var/www/html/configuration/.env" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /configuration/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/10 09:36:57 [error] 175#175: *27 open() "/var/www/html/public/.git/config" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /public/.git/config HTTP/1.1", host: "207.180.195.219"
+2025/03/10 09:36:57 [error] 175#175: *28 open() "/var/www/html/src/.git/config" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /src/.git/config HTTP/1.1", host: "207.180.195.219"
+2025/03/10 09:36:57 [error] 175#175: *29 open() "/var/www/html/api/.git/config" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /api/.git/config HTTP/1.1", host: "207.180.195.219"
+2025/03/10 09:36:57 [error] 175#175: *30 open() "/var/www/html/server/.git/config" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /server/.git/config HTTP/1.1", host: "207.180.195.219"
+2025/03/10 09:36:58 [error] 175#175: *31 open() "/var/www/html/.env.ci" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.ci HTTP/1.1", host: "207.180.195.219"
+2025/03/10 09:36:58 [error] 175#175: *32 open() "/var/www/html/.env.development.local" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.development.local HTTP/1.1", host: "207.180.195.219"
+2025/03/10 09:36:58 [error] 175#175: *33 open() "/var/www/html/.env.production" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.production HTTP/1.1", host: "207.180.195.219"
+2025/03/10 09:36:58 [error] 175#175: *34 open() "/var/www/html/.env.secret" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.secret HTTP/1.1", host: "207.180.195.219"
+2025/03/10 09:36:58 [error] 175#175: *35 open() "/var/www/html/.env.default" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.default HTTP/1.1", host: "207.180.195.219"
+2025/03/10 09:36:58 [error] 175#175: *36 open() "/var/www/html/.env.staging.local" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.staging.local HTTP/1.1", host: "207.180.195.219"
+2025/03/10 09:36:58 [error] 177#177: *37 open() "/var/www/html/assets../.git/config" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /assets../.git/config HTTP/1.1", host: "207.180.195.219"
+2025/03/10 09:36:58 [error] 177#177: *38 open() "/var/www/html/media../.git/config" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /media../.git/config HTTP/1.1", host: "207.180.195.219"
+2025/03/10 09:36:58 [error] 177#177: *39 open() "/var/www/html/docker-compose.prod.yml" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /docker-compose.prod.yml HTTP/1.1", host: "207.180.195.219"
+2025/03/10 09:36:58 [error] 177#177: *40 open() "/var/www/html/.env.dev" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.dev HTTP/1.1", host: "207.180.195.219"
+2025/03/10 09:36:58 [error] 177#177: *41 open() "/var/www/html/.env.save" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.save HTTP/1.1", host: "207.180.195.219"
+2025/03/10 09:36:58 [error] 177#177: *42 open() "/var/www/html/media/.git/config" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /media/.git/config HTTP/1.1", host: "207.180.195.219"
+2025/03/10 09:36:58 [error] 177#177: *43 open() "/var/www/html/dev/.git/config" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /dev/.git/config HTTP/1.1", host: "207.180.195.219"
+2025/03/10 09:36:58 [error] 177#177: *44 open() "/var/www/html/.env.production.local" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.production.local HTTP/1.1", host: "207.180.195.219"
+2025/03/10 09:36:58 [error] 177#177: *45 open() "/var/www/html/.env.sandbox" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.sandbox HTTP/1.1", host: "207.180.195.219"
+2025/03/10 09:36:58 [error] 177#177: *46 open() "/var/www/html/api/.env" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /api/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/10 09:36:58 [error] 177#177: *47 open() "/var/www/html/cms/.git/config" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /cms/.git/config HTTP/1.1", host: "207.180.195.219"
+2025/03/10 09:36:58 [error] 177#177: *48 open() "/var/www/html/core/.git/config" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /core/.git/config HTTP/1.1", host: "207.180.195.219"
+2025/03/10 09:36:58 [error] 177#177: *49 open() "/var/www/html/config/.git/config" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /config/.git/config HTTP/1.1", host: "207.180.195.219"
+2025/03/10 09:36:58 [error] 177#177: *50 open() "/var/www/html/.env.bak" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.bak HTTP/1.1", host: "207.180.195.219"
+2025/03/10 09:36:58 [error] 177#177: *51 open() "/var/www/html/.env.live" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.live HTTP/1.1", host: "207.180.195.219"
+2025/03/10 09:36:58 [error] 177#177: *52 open() "/var/www/html/.env.preprod" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.preprod HTTP/1.1", host: "207.180.195.219"
+2025/03/10 09:36:58 [error] 176#176: *53 open() "/var/www/html/prod/.env" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /prod/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/10 09:36:58 [error] 176#176: *54 open() "/var/www/html/.env.template" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.template HTTP/1.1", host: "207.180.195.219"
+2025/03/10 09:36:58 [error] 176#176: *55 open() "/var/www/html/.git/config" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.git/config HTTP/1.1", host: "207.180.195.219"
+2025/03/10 09:36:58 [error] 176#176: *56 open() "/var/www/html/backup/.git/config" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /backup/.git/config HTTP/1.1", host: "207.180.195.219"
+2025/03/10 09:36:58 [error] 176#176: *57 open() "/var/www/html/.env" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env HTTP/1.1", host: "207.180.195.219"
+2025/03/10 09:36:58 [error] 176#176: *58 open() "/var/www/html/.env.stage" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.stage HTTP/1.1", host: "207.180.195.219"
+2025/03/11 08:12:15 [emerg] 152#152: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2025/03/11 08:12:15 [emerg] 152#152: bind() to [::]:80 failed (98: Address already in use)
+2025/03/11 08:12:15 [emerg] 152#152: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2025/03/11 08:12:15 [emerg] 152#152: bind() to [::]:80 failed (98: Address already in use)
+2025/03/11 08:12:15 [emerg] 152#152: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2025/03/11 08:12:15 [emerg] 152#152: bind() to [::]:80 failed (98: Address already in use)
+2025/03/11 08:12:15 [emerg] 152#152: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2025/03/11 08:12:15 [emerg] 152#152: bind() to [::]:80 failed (98: Address already in use)
+2025/03/11 08:12:15 [emerg] 152#152: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2025/03/11 08:12:15 [emerg] 152#152: bind() to [::]:80 failed (98: Address already in use)
+2025/03/11 08:12:15 [emerg] 152#152: still could not bind()
+2025/03/11 08:12:19 [emerg] 188#188: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2025/03/11 08:12:19 [emerg] 188#188: bind() to [::]:80 failed (98: Address already in use)
+2025/03/11 08:12:19 [emerg] 188#188: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2025/03/11 08:12:19 [emerg] 188#188: bind() to [::]:80 failed (98: Address already in use)
+2025/03/11 08:12:19 [emerg] 188#188: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2025/03/11 08:12:19 [emerg] 188#188: bind() to [::]:80 failed (98: Address already in use)
+2025/03/11 08:12:19 [emerg] 188#188: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2025/03/11 08:12:19 [emerg] 188#188: bind() to [::]:80 failed (98: Address already in use)
+2025/03/11 08:12:19 [emerg] 188#188: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2025/03/11 08:12:19 [emerg] 188#188: bind() to [::]:80 failed (98: Address already in use)
+2025/03/11 08:12:19 [emerg] 188#188: still could not bind()
+2025/03/11 08:12:22 [emerg] 191#191: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2025/03/11 08:12:22 [emerg] 191#191: bind() to [::]:80 failed (98: Address already in use)
+2025/03/11 08:12:22 [emerg] 191#191: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2025/03/11 08:12:22 [emerg] 191#191: bind() to [::]:80 failed (98: Address already in use)
+2025/03/11 08:12:22 [emerg] 191#191: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2025/03/11 08:12:22 [emerg] 191#191: bind() to [::]:80 failed (98: Address already in use)
+2025/03/11 08:12:22 [emerg] 191#191: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2025/03/11 08:12:22 [emerg] 191#191: bind() to [::]:80 failed (98: Address already in use)
+2025/03/11 08:12:22 [emerg] 191#191: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2025/03/11 08:12:22 [emerg] 191#191: bind() to [::]:80 failed (98: Address already in use)
+2025/03/11 08:12:22 [emerg] 191#191: still could not bind()
+2025/03/11 08:12:26 [emerg] 194#194: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2025/03/11 08:12:26 [emerg] 194#194: bind() to [::]:80 failed (98: Address already in use)
+2025/03/11 08:12:26 [emerg] 194#194: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2025/03/11 08:12:26 [emerg] 194#194: bind() to [::]:80 failed (98: Address already in use)
+2025/03/11 08:12:26 [emerg] 194#194: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2025/03/11 08:12:26 [emerg] 194#194: bind() to [::]:80 failed (98: Address already in use)
+2025/03/11 08:12:26 [emerg] 194#194: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2025/03/11 08:12:26 [emerg] 194#194: bind() to [::]:80 failed (98: Address already in use)
+2025/03/11 08:12:26 [emerg] 194#194: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2025/03/11 08:12:26 [emerg] 194#194: bind() to [::]:80 failed (98: Address already in use)
+2025/03/11 08:12:26 [emerg] 194#194: still could not bind()
+2025/03/11 08:12:29 [emerg] 197#197: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2025/03/11 08:12:29 [emerg] 197#197: bind() to [::]:80 failed (98: Address already in use)
+2025/03/11 08:12:29 [emerg] 197#197: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2025/03/11 08:12:29 [emerg] 197#197: bind() to [::]:80 failed (98: Address already in use)
+2025/03/11 08:12:29 [emerg] 197#197: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2025/03/11 08:12:29 [emerg] 197#197: bind() to [::]:80 failed (98: Address already in use)
+2025/03/11 08:12:29 [emerg] 197#197: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2025/03/11 08:12:29 [emerg] 197#197: bind() to [::]:80 failed (98: Address already in use)
+2025/03/11 08:12:29 [emerg] 197#197: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2025/03/11 08:12:29 [emerg] 197#197: bind() to [::]:80 failed (98: Address already in use)
+2025/03/11 08:12:29 [emerg] 197#197: still could not bind()
+2025/03/11 08:12:33 [emerg] 200#200: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2025/03/11 08:12:33 [emerg] 200#200: bind() to [::]:80 failed (98: Address already in use)
+2025/03/11 08:12:33 [emerg] 200#200: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2025/03/11 08:12:33 [emerg] 200#200: bind() to [::]:80 failed (98: Address already in use)
+2025/03/11 08:12:33 [emerg] 200#200: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2025/03/11 08:12:33 [emerg] 200#200: bind() to [::]:80 failed (98: Address already in use)
+2025/03/11 08:12:33 [emerg] 200#200: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2025/03/11 08:12:33 [emerg] 200#200: bind() to [::]:80 failed (98: Address already in use)
+2025/03/11 08:12:33 [emerg] 200#200: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2025/03/11 08:12:33 [emerg] 200#200: bind() to [::]:80 failed (98: Address already in use)
+2025/03/11 08:12:33 [emerg] 200#200: still could not bind()
+2025/03/11 08:12:36 [emerg] 203#203: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2025/03/11 08:12:36 [emerg] 203#203: bind() to [::]:80 failed (98: Address already in use)
+2025/03/11 08:12:36 [emerg] 203#203: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2025/03/11 08:12:36 [emerg] 203#203: bind() to [::]:80 failed (98: Address already in use)
+2025/03/11 08:12:36 [emerg] 203#203: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2025/03/11 08:12:36 [emerg] 203#203: bind() to [::]:80 failed (98: Address already in use)
+2025/03/11 08:12:36 [emerg] 203#203: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2025/03/11 08:12:36 [emerg] 203#203: bind() to [::]:80 failed (98: Address already in use)
+2025/03/11 08:12:36 [emerg] 203#203: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2025/03/11 08:12:36 [emerg] 203#203: bind() to [::]:80 failed (98: Address already in use)
+2025/03/11 08:12:36 [emerg] 203#203: still could not bind()
+2025/03/11 08:12:40 [emerg] 206#206: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2025/03/11 08:12:40 [emerg] 206#206: bind() to [::]:80 failed (98: Address already in use)
+2025/03/11 08:12:40 [emerg] 206#206: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2025/03/11 08:12:40 [emerg] 206#206: bind() to [::]:80 failed (98: Address already in use)
+2025/03/11 08:12:40 [emerg] 206#206: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2025/03/11 08:12:40 [emerg] 206#206: bind() to [::]:80 failed (98: Address already in use)
+2025/03/11 08:12:40 [emerg] 206#206: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2025/03/11 08:12:40 [emerg] 206#206: bind() to [::]:80 failed (98: Address already in use)
+2025/03/11 08:12:40 [emerg] 206#206: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2025/03/11 08:12:40 [emerg] 206#206: bind() to [::]:80 failed (98: Address already in use)
+2025/03/11 08:12:40 [emerg] 206#206: still could not bind()
+2025/03/11 08:17:51 [emerg] 1800#1800: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2025/03/11 08:17:52 [emerg] 1829#1829: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2025/03/11 08:17:53 [emerg] 1832#1832: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2025/03/11 08:17:54 [emerg] 1840#1840: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2025/03/11 08:17:56 [emerg] 1845#1845: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2025/03/11 08:17:57 [emerg] 1848#1848: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2025/03/11 08:17:58 [emerg] 1851#1851: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2025/03/11 08:17:59 [emerg] 1854#1854: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2025/03/11 08:18:00 [emerg] 1857#1857: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2025/03/11 08:18:01 [emerg] 1860#1860: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2025/03/11 08:18:02 [emerg] 1863#1863: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2025/03/11 08:18:03 [emerg] 1866#1866: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2025/03/11 08:18:04 [emerg] 1869#1869: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2025/03/11 08:18:05 [emerg] 1872#1872: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2025/03/11 08:18:06 [emerg] 1875#1875: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2025/03/11 08:18:07 [emerg] 1878#1878: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2025/03/11 08:18:08 [emerg] 1881#1881: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2025/03/11 08:18:09 [emerg] 1884#1884: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2025/03/11 08:18:10 [emerg] 1887#1887: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2025/03/11 08:18:11 [emerg] 1890#1890: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2025/03/11 08:18:12 [emerg] 1893#1893: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2025/03/11 08:18:14 [emerg] 1896#1896: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2025/03/11 08:18:15 [emerg] 1899#1899: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2025/03/11 08:18:16 [emerg] 1902#1902: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2025/03/11 08:18:17 [emerg] 1905#1905: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2025/03/11 08:18:18 [emerg] 1908#1908: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2025/03/11 08:18:19 [emerg] 1911#1911: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2025/03/11 08:18:20 [emerg] 1914#1914: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2025/03/11 08:18:21 [emerg] 1917#1917: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2025/03/11 08:18:22 [emerg] 1920#1920: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2025/03/11 08:18:23 [emerg] 1923#1923: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2025/03/11 08:18:24 [emerg] 1926#1926: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2025/03/11 08:18:25 [emerg] 1929#1929: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2025/03/11 08:18:26 [emerg] 1932#1932: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2025/03/11 08:18:27 [emerg] 1935#1935: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2025/03/11 08:18:28 [emerg] 1938#1938: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2025/03/11 08:18:29 [emerg] 1941#1941: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2025/03/11 08:19:45 [emerg] 1799#1799: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2025/03/11 08:19:46 [emerg] 1830#1830: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2025/03/11 08:19:47 [emerg] 1839#1839: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2025/03/11 08:19:48 [emerg] 1842#1842: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2025/03/11 08:19:49 [emerg] 1845#1845: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2025/03/11 08:19:50 [emerg] 1848#1848: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2025/03/11 08:19:51 [emerg] 1851#1851: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2025/03/11 08:19:52 [emerg] 1854#1854: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2025/03/11 08:19:53 [emerg] 1857#1857: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2025/03/11 08:19:55 [emerg] 1860#1860: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2025/03/11 08:19:56 [emerg] 1863#1863: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2025/03/11 08:19:57 [emerg] 1866#1866: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2025/03/11 08:19:58 [emerg] 1869#1869: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2025/03/11 08:19:59 [emerg] 1872#1872: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2025/03/11 08:20:00 [emerg] 1875#1875: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2025/03/11 08:20:01 [emerg] 1878#1878: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2025/03/11 08:20:02 [emerg] 1881#1881: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2025/03/11 08:20:03 [emerg] 1884#1884: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2025/03/11 08:57:53 [error] 188#188: *416 open() "/var/www/html/.env.bak" failed (2: No such file or directory), client: 47.242.86.9, server: localhost-nginx-proxy-manager, request: "GET /.env.bak HTTP/1.1", host: "207.180.195.219"
+2025/03/11 09:07:10 [error] 210#210: *1978 open() "/var/www/html/index.htm" failed (2: No such file or directory), client: 185.100.87.136, server: localhost-nginx-proxy-manager, request: "POST /index.htm HTTP/1.1", host: "207.180.195.219"
+2025/03/11 09:07:10 [error] 210#210: *1979 open() "/var/www/html/FD873AC4-CF86-4FED-84EC-4BD59C6F17A7" failed (2: No such file or directory), client: 185.100.87.136, server: localhost-nginx-proxy-manager, request: "POST /FD873AC4-CF86-4FED-84EC-4BD59C6F17A7 HTTP/1.1", host: "207.180.195.219"
+2025/03/11 09:14:11 [error] 213#213: *2027 open() "/var/www/html/test.php" failed (2: No such file or directory), client: 176.126.103.21, server: localhost-nginx-proxy-manager, request: "GET /test.php HTTP/1.1", host: "207.180.195.219"

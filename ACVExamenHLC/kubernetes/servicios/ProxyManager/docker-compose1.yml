@@ -1,0 +1,14 @@
+services:
+ npm:
+   image: jc21/nginx-proxy-manager:latest
+   container_name: nginx-proxy-manager1
+   restart: unless-stopped
+   network_mode: "host"
+   privileged: true
+   volumes:
+     - ./data:/data
+     - ./letsencrypt:/etc/letsencrypt
+   environment:
+     - PUID=0
+     - PGID=0
+     - TZ=Europe/Madrid # Cambia según tu zona horaria

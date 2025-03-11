@@ -9,9 +9,6 @@ services:
      - "80:80"         # HTTP
      - "81:81"         # Interfaz de administración
      - "443:443"       # HTTPS
-   volumes:
-     - ./data:/data
-     - ./letsencrypt:/etc/letsencrypt
    environment:
      - PUID=1000
      - PGID=1000
